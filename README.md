@@ -74,15 +74,7 @@ venv/bin/python -m pytest tests -q
 
 ## Architecture
 
-```mermaid
-flowchart TB
-    A["1 · Input<br/>Gradio text box (app.py)"] --> B["2 · Normalization<br/>regex; each model<br/>uses its own variant,<br/>inside the timed step"]
-    B --> M["<b>3 · Five models</b><br/>each returns P(offensive)<br/>Rule: lexicon (Python)<br/>TF-IDF + LogReg (FP64)<br/>Word2Vec + CNN (FP32)<br/>BERTurk (FP32)<br/><b>BERTurk INT8 (default)</b>"]
-    M -->|"selected model only, timed"| D["4 · Decision<br/>P ≥ dev-chosen threshold<br/>→ label + confidence"]
-    D --> E["5 · Masking (offensive only)<br/>lexicon words → s****,<br/>else whole message hidden"]
-    E --> F["6 · Chat line + latency log<br/>ms per message<br/>vs 50 ms budget"]
-    M -->|"all 5 models, after timing"| G["Side panel:<br/>all-models comparison table"]
-```
+![System architecture: input, per-model normalization and five models; the selected model goes to decision, masking and the chat line with latency log; all five models fill the side panel table](docs/architecture.svg)
 
 - Everything runs on the CPU (measurements: Intel i7-13650HX, Windows 11, 4 threads, GPU hidden).
 - BERTurk keeps upper/lower case but lowercases words written ENTIRELY IN CAPITALS; the
