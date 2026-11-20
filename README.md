@@ -75,16 +75,13 @@ venv/bin/python -m pytest tests -q
 ## Architecture
 
 ```mermaid
-flowchart LR
-    A["1 · Input<br/>Gradio text box<br/>(app.py)"] --> B["2 · Normalization<br/>regex: leetspeak, repeats,<br/>spaced letters, Turkish lowercase"]
-    B --> C["3 · Classification<br/>selected model → P(offensive)"]
-    C --> D["4 · Decision<br/>P ≥ threshold chosen on dev<br/>→ label + confidence"]
-    D --> E["5 · Display<br/>masking, latency log,<br/>all-models table"]
-    C -.- M1["Rule: lexicon + edit distance"]
-    C -.- M2["TF-IDF + Logistic Regression"]
-    C -.- M3["Word2Vec + 1D CNN"]
-    C -.- M4["BERTurk FP32"]
-    C -.- M5["BERTurk INT8 (default)"]
+flowchart TB
+    A["1 · Input<br/>Gradio text box (app.py)"] --> B["2 · Normalization<br/>regex; each model<br/>uses its own variant,<br/>inside the timed step"]
+    B --> M["<b>3 · Five models</b><br/>each returns P(offensive)<br/>Rule: lexicon (Python)<br/>TF-IDF + LogReg (FP64)<br/>Word2Vec + CNN (FP32)<br/>BERTurk (FP32)<br/><b>BERTurk INT8 (default)</b>"]
+    M -->|"selected model only, timed"| D["4 · Decision<br/>P ≥ dev-chosen threshold<br/>→ label + confidence"]
+    D --> E["5 · Masking (offensive only)<br/>lexicon words → s****,<br/>else whole message hidden"]
+    E --> F["6 · Chat line + latency log<br/>ms per message<br/>vs 50 ms budget"]
+    M -->|"all 5 models, after timing"| G["Side panel:<br/>all-models comparison table"]
 ```
 
 - Everything runs on the CPU (measurements: Intel i7-13650HX, Windows 11, 4 threads, GPU hidden).
