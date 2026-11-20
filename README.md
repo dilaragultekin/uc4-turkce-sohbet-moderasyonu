@@ -3,26 +3,25 @@
 **SWE015 Introduction to Large Language Models — Homework, Use Case 4**
 Dilara Gültekin · 2309011002
 
-Türkçe sohbet mesajlarını CPU üzerinde gerçek zamanlı olarak **temiz / saldırgan**
-diye etiketleyen, saldırgan mesajları maskeleyen ve her mesajın yanıt süresini
-kaydeden bir uygulama ("Sohbet Kalkanı"). Dört basamaklı model merdiveni aynı test
-setinde, aynı CPU'da karşılaştırılır; uygulamada varsayılan model INT8 quantize
-edilmiş BERTurk'tür.
+An application that labels Turkish chat messages as **clean / offensive** in real time on
+a CPU, masks offensive messages and logs the response time of every message
+("Sohbet Kalkanı"). A four-rung model ladder is compared on the same test set and the
+same CPU; the default model in the app is BERTurk quantized to INT8.
 
 | | Link |
 |---|---|
-| Eğitilmiş model dosyaları | https://huggingface.co/Dilara00004/uc4-turkce-sohbet-moderasyonu |
-| Demo videosu | *(eklenecek)* |
-| Sunum (PDF) | *(eklenecek)* |
+| Trained model files | https://huggingface.co/Dilara00004/uc4-turkce-sohbet-moderasyonu |
+| Demo video | *(to be added)* |
+| Presentation (PDF) | *(to be added)* |
 
 ---
 
-## Hızlı başlangıç (uygulamayı çalıştırmak)
+## Quick start (running the app)
 
-**Gereksinim: Python 3.12 veya 3.13** (3.12.10 ile test edildi). Python 3.14
-desteklenmez: `scikit-learn==1.6.1`'in 3.14 paketi yoktur. GPU gerekmez.
+**Requirement: Python 3.12 or 3.13** (tested with 3.12.10). Python 3.14 is not
+supported: `scikit-learn==1.6.1` has no 3.14 package. No GPU is needed.
 
-**Windows (PowerShell)** — `py -3.12` Python başlatıcısıdır; yoksa Python 3.12'nin tam yolunu kullanın:
+**Windows (PowerShell)** — `py -3.12` is the Python launcher; if you don't have it, use the full path of Python 3.12:
 
 ```powershell
 py -3.12 -m venv venv
@@ -34,136 +33,138 @@ venv\Scripts\python.exe app.py
 
 ```bash
 python3.12 -m venv venv
-# Yalnızca Linux: önce CPU sürümünü kurun, yoksa ~2 GB'lık CUDA paketleri iner
+# Linux only: install the CPU build first, otherwise ~2 GB of CUDA packages are downloaded
 venv/bin/python -m pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
 venv/bin/python -m pip install -r requirements.txt
 venv/bin/python app.py
 ```
 
-Tarayıcıda `http://127.0.0.1:7860` açılır.
+The app opens at `http://127.0.0.1:7860`.
 
-**İlk açılışta** eksik model dosyaları (~630 MB) yukarıdaki Hugging Face deposundan,
-sabitlenmiş bir commit'ten otomatik indirilir. İndirilen her dosyanın SHA-256 özeti
-repodaki `models_manifest.json` ile karşılaştırılır; tutmayan dosya silinir ve o model
-yüklenmez. Sonraki açılışlarda internet gerekmez. İsterseniz önceden indirebilirsiniz:
+**On the first start** the missing model files (~630 MB) are downloaded automatically from
+the Hugging Face repository above, from a pinned commit. The SHA-256 checksum of every
+downloaded file is compared with `models_manifest.json` in this repository; a file that does
+not match is deleted and that model is not loaded. Later starts need no internet. You can
+also download them beforehand:
 
 ```bash
 venv/bin/python -m src.model_store download     # Windows: venv\Scripts\python.exe -m src.model_store download
-venv/bin/python -m src.model_store verify       # yereldeki dosyaları SHA-256 ile kontrol eder
+venv/bin/python -m src.model_store verify       # checks the local files against their SHA-256
 ```
 
-Testler (ağa çıkmaz; modeller indirildikten sonra bütün testler çalışır):
+Tests (no network access; all tests run once the models are downloaded):
 
 ```bash
 venv/bin/python -m pytest tests -q
 ```
 
-> Not: Windows'ta `activate` betiği PowerShell ayarı yüzünden sessizce çalışmayabilir;
-> o zaman `python` başka bir kurulumu çağırır. Bu yüzden komutlar ortamın
-> `python.exe` dosyasını doğrudan kullanır.
+> Note: on Windows the `activate` script can silently fail because of a PowerShell
+> setting; `python` then calls a different installation. That is why the commands use the
+> environment's `python.exe` directly.
 
-## Uygulama
+## The application
 
-- Solda sohbet penceresi: her mesaj **temiz / saldırgan** etiketi ve güven puanıyla görünür.
-- Saldırgan mesaj maskelenir: sözlükte bulunan kelimeler `s****` biçiminde yıldızlanır;
-  sözlükte kelime yoksa mesajın tamamı gizlenir.
-- Sağ panel: model seçimi, son mesajın **beş modeldeki** sonucu yan yana, her mesajın
-  gecikme kaydı (bütçe ≤ 50 ms) ve INT8 modelin yüklendiğini gösteren durum bölümü.
+- Chat window on the left: every message is shown with a **clean / offensive** label
+  (in Turkish: *temiz / saldırgan*) and a confidence score.
+- Offensive messages are masked: words found in the lexicon are starred as `s****`;
+  if no lexicon word is found, the whole message is hidden.
+- Side panel on the right: model selection, the last message's result in **all five
+  models** side by side, a latency log of every message (budget ≤ 50 ms) and a status
+  section showing that the INT8 model is loaded.
 
-## Mimari
+## Architecture
 
 ```mermaid
 flowchart LR
-    A["1 · Girdi<br/>Gradio metin kutusu<br/>(app.py)"] --> B["2 · Normalizasyon<br/>regex: leetspeak, tekrar,<br/>aralıklı harf, Türkçe küçük harf"]
-    B --> C["3 · Sınıflandırma<br/>seçili model → P(saldırgan)"]
-    C --> D["4 · Karar<br/>P ≥ dev'de seçilen eşik<br/>→ etiket + güven"]
-    D --> E["5 · Gösterim<br/>maskeleme, gecikme kaydı,<br/>tüm modeller tablosu"]
-    C -.- M1["Kural: sözlük + edit distance"]
-    C -.- M2["TF-IDF + Lojistik Regresyon"]
+    A["1 · Input<br/>Gradio text box<br/>(app.py)"] --> B["2 · Normalization<br/>regex: leetspeak, repeats,<br/>spaced letters, Turkish lowercase"]
+    B --> C["3 · Classification<br/>selected model → P(offensive)"]
+    C --> D["4 · Decision<br/>P ≥ threshold chosen on dev<br/>→ label + confidence"]
+    D --> E["5 · Display<br/>masking, latency log,<br/>all-models table"]
+    C -.- M1["Rule: lexicon + edit distance"]
+    C -.- M2["TF-IDF + Logistic Regression"]
     C -.- M3["Word2Vec + 1D CNN"]
     C -.- M4["BERTurk FP32"]
-    C -.- M5["BERTurk INT8 (varsayılan)"]
+    C -.- M5["BERTurk INT8 (default)"]
 ```
 
-- Her şey CPU'da çalışır (ölçümler: Intel i7-13650HX, Windows 11, 4 thread, GPU gizli).
-- BERTurk büyük/küçük harfi korur ama TAMAMI BÜYÜK HARF kelimeleri küçültür; diğer
-  modeller Türkçe kurallarıyla küçük harfe çevrilmiş metni kullanır.
-- Model dosyaları açılışta Hugging Face Hub'dan indirilir ve doğrulanır (`src/model_store.py`).
+- Everything runs on the CPU (measurements: Intel i7-13650HX, Windows 11, 4 threads, GPU hidden).
+- BERTurk keeps upper/lower case but lowercases words written ENTIRELY IN CAPITALS; the
+  other models use text lowercased with Turkish rules.
+- Model files are downloaded from Hugging Face Hub at start-up and verified (`src/model_store.py`).
 
-## Model merdiveni ve teknik haritası
+## Model ladder and technique map
 
-| Alan | Teknik | Uygulamadaki bileşen | Kod |
+| Area | Technique | Component in the app | Code |
 |---|---|---|---|
-| B | Düzenli ifadeler, metin normalizasyonu | her mesaj her modelden önce temizlenir | `src/lexicon/normalizer.py` |
-| B | Minimum edit distance | sözlük eşleştirici: kural modeli ve maskeleme | `src/lexicon/matcher.py`, `build_lexicon.py` |
-| B | tf-idf | kelime 1–2 + karakter 2–5 n-gram → lojistik regresyon | `src/02_classical_baseline.py` |
-| B · A | word2vec (skip-gram, kendi eğitimimiz) | yalnızca train ile eğitilen 200 boyutlu vektörler | `src/03_word2vec_nn.py` |
-| A | 1D CNN, dropout, geri yayılım | Word2Vec vektörleri üzerinde TextCNN | `src/nn_models.py` |
-| C | BERTurk ince ayarı, WordPiece | `dbmdz/bert-base-turkish-cased` + sınıflandırma başlığı | `src/04_bertturk_finetune.py` |
-| D | Dinamik INT8 quantization | uygulamanın varsayılan modeli | `src/05_quantization.py` |
-| D | Boyut, gecikme, doğruluk ölçümü | sonuç tablosu: aynı test seti, CPU | `src/06_benchmark.py` |
+| B | Regular expressions, text normalization | every message is cleaned before every model | `src/lexicon/normalizer.py` |
+| B | Minimum edit distance | lexicon matcher: rule model and masking | `src/lexicon/matcher.py`, `build_lexicon.py` |
+| B | tf-idf | word 1–2 + character 2–5 n-grams → logistic regression | `src/02_classical_baseline.py` |
+| B · A | word2vec (skip-gram, trained by us) | 200-dimensional vectors trained on train only | `src/03_word2vec_nn.py` |
+| A | 1D CNN, dropout, backpropagation | TextCNN on the Word2Vec vectors | `src/nn_models.py` |
+| C | BERTurk fine-tuning, WordPiece | `dbmdz/bert-base-turkish-cased` + classification head | `src/04_bertturk_finetune.py` |
+| D | Dynamic INT8 quantization | the app's default model | `src/05_quantization.py` |
+| D | Size, latency and accuracy benchmark | results table: same test set, CPU | `src/06_benchmark.py` |
 
-A = sinir ağları · B = klasik NLP · C = Transformer · D = verimli modeller
+A = neural networks · B = classical NLP · C = Transformers · D = efficient models
 
-## Değerlendirme protokolü
+## Evaluation protocol
 
-- **train** (30 000): model eğitimi, Word2Vec, sözlük istatistikleri
-- **dev** (1 756): hiperparametre, mimari, sözlük yapılandırması ve karar eşiği seçimi
-- **test** (3 528, resmi OffensEval-TR test seti): yalnızca `06_benchmark.py` içinde, bir kez
-- Metrik: macro-F1 (sınıflar dengesiz, ~%20 saldırgan)
-- Gecikme: 200 farklı test mesajı, tek tek (batch = 1), uçtan uca (normalizasyon +
-  tokenizasyon + model), 10 ısınma çalıştırması sonrası; ortalama ve p95; CPU, 4 thread
-- Gecikme bütçesi: **p95 ≤ 50 ms / mesaj** (CPU), ölçümden önce belirlendi
+- **train** (30,000): model training, Word2Vec, lexicon statistics
+- **dev** (1,756): selection of hyperparameters, architecture, lexicon configuration and decision threshold
+- **test** (3,528, the official OffensEval-TR test set): only inside `06_benchmark.py`, once
+- Metric: macro-F1 (the classes are imbalanced, ~20% offensive)
+- Latency: 200 different test messages, one at a time (batch = 1), end to end (normalization +
+  tokenization + model), after 10 warm-up runs; mean and p95; CPU, 4 threads
+- Latency budget: **p95 ≤ 50 ms per message** (CPU), set before measuring
 
-## Sonuçlar
+## Results
 
-Resmi test seti (3 528 mesaj). Donanım: Intel Core i7-13650HX, Windows 11,
-PyTorch 2.15 (CPU), 4 thread, GPU gizli. Kaynak: `results/results_table.md`,
-ayrıntılar `results/results.json`, her mesajın tahmini `results/test_predictions.csv`.
+Official test set (3,528 messages). Hardware: Intel Core i7-13650HX, Windows 11,
+PyTorch 2.15 (CPU), 4 threads, GPU hidden. Source: `results/results_table.md`,
+details in `results/results.json`, every message's prediction in `results/test_predictions.csv`.
 
-| Model | Test macro-F1 | Boyut (MB) | Gecikme ort. (ms) | Gecikme p95 (ms) | Bütçe (p95 ≤ 50 ms) |
+| Model | Test macro-F1 | Size (MB) | Latency mean (ms) | Latency p95 (ms) | Budget (p95 ≤ 50 ms) |
 |---|---|---|---|---|---|
-| Kural: sözlük + edit distance | 0.7131 | 0.2 | 0.14 | 0.35 | ✓ |
-| TF-IDF + Lojistik Regresyon | 0.7697 | 6.9 | 1.21 | 2.18 | ✓ |
-| Word2Vec + Sinir Ağı (1D CNN) | 0.7147 | 25.8 | 0.37 | 0.61 | ✓ |
+| Rule: lexicon + edit distance | 0.7131 | 0.2 | 0.14 | 0.35 | ✓ |
+| TF-IDF + Logistic Regression | 0.7697 | 6.9 | 1.21 | 2.18 | ✓ |
+| Word2Vec + Neural Network (1D CNN) | 0.7147 | 25.8 | 0.37 | 0.61 | ✓ |
 | BERTurk (FP32) | 0.8114 | 442.5 | 22.15 | 40.11 | ✓ |
-| **BERTurk (INT8 quantized) — uygulamada** | **0.8177** | **186.0** | **16.40** | **22.27** | ✓ |
+| **BERTurk (INT8 quantized) — in the app** | **0.8177** | **186.0** | **16.40** | **22.27** | ✓ |
 
-- BERTurk, TF-IDF'i macro-F1'de 0.042 (FP32) ve 0.048 (INT8) geçer.
-- INT8 modeli 2.4 kat küçüktür ve p95 gecikmesi 40.1 → 22.3 ms'ye düşer. FP32 ile INT8
-  arasındaki fark iki çalıştırmada işaret değiştirdi (−0.007, +0.006); gürültü düzeyindedir.
-- FP32 de bu dizüstünde bütçeye sığmaktadır; INT8 bütçenin yarısının altında kalarak pay bırakır.
-- Dinamik INT8'de aktivasyon ölçeği dolgu (padding) tokenlarını da gördüğü için bir
-  mesajın olasılığı batch boyutuna göre değişebilir; bu yüzden INT8 modeli, uygulamadaki
-  gibi her mesaj tek tek değerlendirilir (`models/bertturk_int8/meta.json` → `batch_effect_int8`).
-- Hata örnekleri: `results/failure_examples.csv`.
-- INT8 modeli işletim sistemine göre farklı hesaplama motoru kullanır (Windows: oneDNN,
-  Linux: x86). Linux'ta sıfırdan kurulumda INT8 macro-F1 0.8181 ölçüldü (Windows'ta 0.8177);
-  diğer dört modelin sonuçları birebir aynıdır.
+- BERTurk beats TF-IDF in macro-F1 by 0.042 (FP32) and 0.048 (INT8).
+- The INT8 model is 2.4× smaller and its p95 latency drops from 40.1 to 22.3 ms. The difference
+  between FP32 and INT8 changed sign between two runs (−0.007, +0.006); it is at noise level.
+- FP32 also fits the budget on this laptop; INT8 stays under half the budget and leaves headroom.
+- In dynamic INT8 the activation scale also sees the padding tokens, so a message's
+  probability can change with the batch size; the INT8 model is therefore evaluated one
+  message at a time, as in the app (`models/bertturk_int8/meta.json` → `batch_effect_int8`).
+- Failure examples: `results/failure_examples.csv`.
+- The INT8 model uses a different compute engine depending on the operating system (this
+  table: Windows, oneDNN). On another system the INT8 macro-F1 may differ very slightly in the last digit.
 
-**İlk değerlendirme (v1).** Uygulamayı test ederken TAMAMI BÜYÜK HARFLE yazılmış
-hakaretlerin ("İT HERİF") temiz sayıldığı görüldü. Normalizasyon, BÜYÜK HARF kelimeleri
-küçültecek şekilde düzeltildi, BERTurk yeniden eğitildi ve eşik yine dev'de seçildi.
-Düzeltmeden önceki sonuçlar silinmedi: `results/eval_v1_before_allcaps_fix/`
-(v1: BERTurk FP32 0.8223, INT8 0.8150). Kural, TF-IDF ve CNN sonuçları iki
-çalıştırmada birebir aynıdır.
+**First evaluation (v1).** While testing the app, insults written ENTIRELY IN CAPITALS
+("İT HERİF") were labeled clean. Normalization was fixed to lowercase all-caps words,
+BERTurk was retrained and the threshold was again chosen on dev. The results from before the
+fix were not deleted: `results/eval_v1_before_allcaps_fix/`
+(v1: BERTurk FP32 0.8223, INT8 0.8150). The rule, TF-IDF and CNN results are identical
+in both runs.
 
-## Tam yeniden üretim (eğitim)
+## Full reproduction (training)
 
-Bu projede adımlar şu ortamlarda çalıştırılmıştır:
+The steps of this project were run in these environments:
 
-- **Google Colab, NVIDIA L4 GPU:** veri hazırlama ve model eğitimleri
+- **Google Colab, NVIDIA L4 GPU:** data preparation and model training
   (`01`, `02`, `03`, `04`) — `notebooks/colab_train.ipynb`.
-  Colab ortamının paket sürümleri: `results/env_colab.txt`.
-- **Laptop, yalnızca CPU** (Intel i7-13650HX, Windows 11, 4 thread): sözlük oluşturma
-  (`build_lexicon.py`), INT8 quantization (`05`), final test ve gecikme ölçümü (`06`), uygulama.
-  Laptop ortamının paket sürümleri: `results/env_laptop.txt`.
+  Package versions of the Colab environment: `results/env_colab.txt`.
+- **Laptop, CPU only** (Intel i7-13650HX, Windows 11, 4 threads): lexicon building
+  (`build_lexicon.py`), INT8 quantization (`05`), final test and latency measurement (`06`), the app.
+  Package versions of the laptop environment: `results/env_laptop.txt`.
 
-GPU yalnızca eğitimde kullanılmıştır. Raporlanan bütün gecikme sayıları CPU'dadır
-(UC4 senaryosu: yalnızca CPU olan sunucu).
+The GPU was used for training only. All reported latency numbers are on the CPU
+(UC4 scenario: a CPU-only server).
 
-Eğitim için `requirements-train.txt` kullanılır (uygulama paketleri + `gensim`).
-Yerelde GPU ile eğitim için PyTorch'u önce CUDA paketinden kurun:
+Training uses `requirements-train.txt` (the app packages + `gensim`).
+To train locally on a GPU, install PyTorch from the CUDA package first:
 
 ```bash
 pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cu126
@@ -179,37 +180,37 @@ python src/06_benchmark.py
 python app.py
 ```
 
-`06_benchmark.py` her model için 200 mesajlık gecikme ölçümü de yaptığından yavaş
-bilgisayarlarda uzun sürebilir (2 çekirdekli bir makinede 25 dakikayı aştı).
+Because `06_benchmark.py` also measures latency on 200 messages for every model, it can take
+a long time on slow computers.
 
-Modelleri yeniden eğitip Hub'a yüklemek isteyen için (`hf auth login` sonrası):
+To retrain the models and upload them to the Hub (after `hf auth login`):
 
 ```bash
-python -m src.model_store manifest --repo-id KULLANICI/DEPO
-hf upload KULLANICI/DEPO models . --exclude ".gitkeep" --exclude ".cache/*"
+python -m src.model_store manifest --repo-id USER/REPO
+hf upload USER/REPO models . --exclude ".gitkeep" --exclude ".cache/*"
 python -m src.model_store pin
 ```
 
-## Veri ve kaynaklar
+## Data and sources
 
 - **OffensEval-TR 2020** — Çöltekin, Ç. (2020). *A Corpus of Turkish Offensive Language on
-  Social Media.* LREC 2020, 6174–6184. Lisans: CC-BY-2.0.
-  Kullanılan sürüm: [`stefan-it/offenseval2020_tr`](https://huggingface.co/datasets/stefan-it/offenseval2020_tr)
-  (commit `f34679c`), resmi eğitim setini 30 000 train + 1 756 dev olarak böler; test seti değişmez.
-- **Sözlük tohum listesi** — [`ooguz/turkce-kufur-karaliste`](https://github.com/ooguz/turkce-kufur-karaliste)
-  (commit `56962ae`), CC-BY-SA-4.0. Liste doğrudan kullanılmaz; her girdi train verisinde
-  denetlenir (`results/lexicon/external_audit.csv`). Tek başına saldırgan olmayan 39 kelime
-  elle çıkarılmıştır (`src/lexicon/manual_exclusions.txt`, gerekçeleriyle). Türetilmiş sözlük
-  (`src/lexicon/offensive_words.txt`) aynı lisansla paylaşılır.
+  Social Media.* LREC 2020, 6174–6184. License: CC-BY-2.0.
+  Version used: [`stefan-it/offenseval2020_tr`](https://huggingface.co/datasets/stefan-it/offenseval2020_tr)
+  (commit `f34679c`), which splits the official training set into 30,000 train + 1,756 dev; the test set is unchanged.
+- **Lexicon seed list** — [`ooguz/turkce-kufur-karaliste`](https://github.com/ooguz/turkce-kufur-karaliste)
+  (commit `56962ae`), CC-BY-SA-4.0. The list is not used as is; every entry is audited
+  on the training data (`results/lexicon/external_audit.csv`). 39 words that are not offensive
+  on their own were removed by hand (`src/lexicon/manual_exclusions.txt`, with reasons). The derived
+  lexicon (`src/lexicon/offensive_words.txt`) is shared under the same license.
 - **BERTurk** — `dbmdz/bert-base-turkish-cased` (MDZ Digital Library team, Bavarian State Library), MIT.
 
-## AI kullanımı
+## AI usage
 
-Claude (Anthropic) kodlama asistanı olarak kullanılmıştır: kod yazımı ve hata ayıklama
-(veri hazırlama, dört model, quantization, benchmark, Gradio uygulaması), birim ve
-entegrasyon testleri, bu README ve sunumun ilk taslağı.
+Claude (Anthropic) was used as a coding assistant: writing and debugging code
+(data preparation, the four models, quantization, benchmark, the Gradio app), unit and
+integration tests, this README and a first draft of the presentation.
 
-Bütün eğitimler (Google Colab) ile quantization, test ve gecikme ölçümleri (kendi
-bilgisayarım) tarafımdan çalıştırılmıştır. Raporlanan her sayı `results/` klasöründeki
-kendi çıktılarımdan gelir. Uygulamayı elle test ederken BÜYÜK HARF hatasını buldum;
-her değişikliği inceleyip onayladım ve ilk çalıştırmanın sonuçlarını da raporlamayı seçtim.
+All training (Google Colab) and the quantization, test and latency measurements (my own
+laptop) were run by me. Every reported number comes from my own outputs in the `results/`
+folder. I found the ALL-CAPS bug while testing the app by hand; I reviewed and approved
+every change and chose to also report the results of the first run.
