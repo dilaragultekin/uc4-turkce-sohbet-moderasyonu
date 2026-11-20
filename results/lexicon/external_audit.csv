@@ -1,0 +1,689 @@
+entry,length,train_support,train_off,train_precision,decision,reason
+abaza,5,7,4,0.5714,keep,train kesinliği yeterli
+abazan,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ag,2,10,5,0.5,keep,train kesinliği yeterli
+ahmak,5,12,7,0.5833,keep,train kesinliği yeterli
+allah,4,956,261,0.273,drop,train kesinliği düşük (yanlış alarm riski)
+allahsız,7,3,2,0.6667,keep,train kesinliği yeterli
+am,2,27,19,0.7037,keep,train kesinliği yeterli
+am biti,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amarım,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ambiti,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcik,5,14,14,1.0,keep,train kesinliği yeterli
+amck,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amckl,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcklama,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcklaryla,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amckta,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcktan,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcuk,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcık,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcık hoşafı,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcıklama,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcıklandı,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amcığı,6,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+amcığın,7,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+amcığını,8,3,3,1.0,keep,train kesinliği yeterli
+amcığınızı,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amin oglu,9,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+amina,5,31,31,1.0,keep,train kesinliği yeterli
+amina g,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amina k,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amina koyarim,13,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+amina koyayim,13,7,7,1.0,keep,train kesinliği yeterli
+amina koyayım,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+aminako,7,5,5,1.0,keep,train kesinliği yeterli
+aminakoyarim,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+aminakoyim,10,6,6,1.0,keep,train kesinliği yeterli
+aminda,6,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+amindan,7,4,4,1.0,keep,train kesinliği yeterli
+amindayken,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amini,5,8,8,1.0,keep,train kesinliği yeterli
+aminiyarraaniskiim,15,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+aminoglu,8,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+amiyum,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amk,3,301,287,0.9535,keep,train kesinliği yeterli
+amk çocuğu,10,4,4,1.0,keep,train kesinliği yeterli
+amkafa,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amlarnzn,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amlı,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amm,2,0,0,,drop,train'de kanıt yok ve kısa (< 4)
+ammak,4,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ammna,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amn,3,0,0,,drop,train'de kanıt yok ve kısa (< 4)
+amna,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amnda,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amndaki,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amngtn,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amnn,3,0,0,,drop,train'de kanıt yok ve kısa (< 4)
+amona,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amq,3,4,4,1.0,keep,train kesinliği yeterli
+amsiz,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amsz,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amsız,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amteri,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amugaa,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amuna,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amuğa,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amık,4,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+amın feryadı,12,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+amın oglu,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amın oğlu,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amına,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amına koy,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amına koyarım,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amına koyayım,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amına koyyim,11,7,7,1.0,keep,train kesinliği yeterli
+amına s,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amına sikem,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amına sokam,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amınako,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amınakoyim,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amınoğlu,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amını,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amını s,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amısına,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+amısını,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ana,3,58,12,0.2069,drop,train kesinliği düşük (yanlış alarm riski)
+anaann,4,21,5,0.2381,drop,train kesinliği düşük (yanlış alarm riski)
+anal,4,56,21,0.375,drop,"manuel dışlama: önek eşleşmesi ""analiz"", ""analist"" kelimelerini yakalar"
+analarn,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+anam,4,25,5,0.2,drop,train kesinliği düşük (yanlış alarm riski)
+anamla,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+anan,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+anana,5,3,2,0.6667,keep,train kesinliği yeterli
+anandan,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+anani,5,23,23,1.0,keep,train kesinliği yeterli
+anani sikerim,13,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+anani sikeyim,13,3,3,1.0,keep,train kesinliği yeterli
+ananin,6,14,13,0.9286,keep,train kesinliği yeterli
+ananisikerim,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananisikeyim,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+anann,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananz,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananı,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananı sikerim,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananı sikeyim,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananın,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananın am,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananın amı,10,3,3,1.0,keep,train kesinliği yeterli
+ananın dölü,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananınki,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananısikerim,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananısikeyim,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ananızın,8,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ananızın am,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+anas,4,7,1,0.1429,drop,train kesinliği düşük (yanlış alarm riski)
+anasi,5,13,8,0.6154,keep,train kesinliği yeterli
+anasinin,8,5,2,0.4,drop,train kesinliği düşük (yanlış alarm riski)
+anası orospu,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+anasını,7,33,25,0.7576,keep,train kesinliği yeterli
+anasının am,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+anay,4,23,8,0.3478,drop,train kesinliği düşük (yanlış alarm riski)
+anayin,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+angut,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+anneni,5,9,5,0.5556,keep,train kesinliği yeterli
+annenin,6,9,4,0.4444,drop,train kesinliği düşük (yanlış alarm riski)
+annesiz,6,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+anuna,5,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+aptal,5,85,53,0.6235,keep,train kesinliği yeterli
+aq,2,245,242,0.9878,keep,train kesinliği yeterli
+aq.,3,0,0,,drop,train'de kanıt yok ve kısa (< 4)
+ass,2,17,3,0.1765,drop,train kesinliği düşük (yanlış alarm riski)
+atkafası,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+atmık,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+attrrm,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+attırdığım,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+auzlu,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+avrat,5,9,6,0.6667,keep,train kesinliği yeterli
+ayklarmalrmsikerim,18,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+azdım,5,18,17,0.9444,keep,train kesinliği yeterli
+azdır,5,5,1,0.2,drop,train kesinliği düşük (yanlış alarm riski)
+azdırıcı,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ağzına sıçayım,14,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+babaannesi kaşar,14,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+babani,6,9,3,0.3333,drop,train kesinliği düşük (yanlış alarm riski)
+babanı,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+babanın,7,6,2,0.3333,drop,train kesinliği düşük (yanlış alarm riski)
+babası pezevenk,15,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bacağına sıçayım,16,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bacini,6,3,2,0.6667,keep,train kesinliği yeterli
+bacn,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bacndan,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bacy,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bacına,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bacını,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bacının,7,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+bastard,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+basur,5,4,1,0.25,drop,train kesinliği düşük (yanlış alarm riski)
+beyinsiz,8,25,23,0.92,keep,train kesinliği yeterli
+bitch,5,2,1,0.5,keep,"train'de kanıt yok, uzunluk >= 4"
+biting,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bok,3,72,61,0.8472,keep,train kesinliği yeterli
+boka,4,16,14,0.875,keep,train kesinliği yeterli
+bokbok,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bokhu,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bokkumu,6,4,3,0.75,keep,train kesinliği yeterli
+boklar,6,3,3,1.0,keep,train kesinliği yeterli
+boktan,6,17,14,0.8235,keep,train kesinliği yeterli
+boku,4,27,24,0.8889,keep,train kesinliği yeterli
+bokubokuna,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bokum,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+bokça,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bombok,6,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+boner,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bosalmak,8,3,3,1.0,keep,train kesinliği yeterli
+boşalmak,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+bızır,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+cenabet,7,6,5,0.8333,keep,train kesinliği yeterli
+cibiliyetsiz,12,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+cibilliyetini,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+cibilliyetsiz,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+cif,3,0,0,,drop,train'de kanıt yok ve kısa (< 4)
+cikar,5,509,156,0.3065,drop,train kesinliği düşük (yanlış alarm riski)
+cim,3,2,0,0.0,drop,train'de kanıt yok ve kısa (< 4)
+dalaksız,8,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+dallama,6,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+daltassak,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+dalyarak,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+dalyarrak,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+dangalak,8,10,9,0.9,keep,train kesinliği yeterli
+dassagi,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+diktim,6,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+dildo,5,3,3,1.0,keep,train kesinliği yeterli
+dingil,6,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+dingilini,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+dinsiz,6,8,6,0.75,keep,train kesinliği yeterli
+dkerim,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domal,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+domalan,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domaldı,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domaldın,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domalmak,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domalmış,8,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+domalsın,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domalt,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domaltarak,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domaltip,8,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+domaltmak,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domaltıp,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domaltır,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domaltırım,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domalık,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+domalıyor,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+dölü,4,129,29,0.2248,drop,train kesinliği düşük (yanlış alarm riski)
+dönek,5,10,10,1.0,keep,train kesinliği yeterli
+düdük,5,4,1,0.25,drop,train kesinliği düşük (yanlış alarm riski)
+eben,4,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ebeni,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ebenin,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ebeninki,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ebleh,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ecdadini,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ecdadını,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+embesil,7,9,8,0.8889,keep,train kesinliği yeterli
+emi,3,11,7,0.6364,keep,train kesinliği yeterli
+fahise,6,8,8,1.0,keep,train kesinliği yeterli
+fahişe,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+feriştah,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ferre,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+fuck,4,7,5,0.7143,keep,train kesinliği yeterli
+fucker,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+fuckin,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+fucking,7,2,1,0.5,keep,"train'de kanıt yok, uzunluk >= 4"
+gavad,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gavat,5,19,19,1.0,keep,train kesinliği yeterli
+geber,5,22,16,0.7273,keep,train kesinliği yeterli
+geberik,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gebermek,8,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+gebermiş,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gebertir,8,2,1,0.5,keep,"train'de kanıt yok, uzunluk >= 4"
+gerizekali,10,69,61,0.8841,keep,train kesinliği yeterli
+gerizekalı,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gerzek,6,7,7,1.0,keep,train kesinliği yeterli
+gerızekalı,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+giberim,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+giberler,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gibis,5,36,8,0.2222,drop,train kesinliği düşük (yanlış alarm riski)
+gibiş,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gibmek,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gibtiler,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+goddamn,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+godoş,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+godumun,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gotelek,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+gotlalesi,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gotlu,5,5,4,0.8,keep,train kesinliği yeterli
+gotten,5,5,5,1.0,keep,train kesinliği yeterli
+gotundeki,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gotunden,8,5,5,1.0,keep,train kesinliği yeterli
+gotune,6,9,9,1.0,keep,train kesinliği yeterli
+gotunu,6,36,34,0.9444,keep,train kesinliği yeterli
+gotveren,8,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+goyiim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+goyum,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+goyuyim,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+goyyim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gtelek,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gtn,3,0,0,,drop,train'de kanıt yok ve kısa (< 4)
+gtnde,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gtnden,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gtne,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gtten,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+gtveren,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+göt,3,40,33,0.825,keep,train kesinliği yeterli
+göt deliği,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+göt herif,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+göt oğlanı,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+göt veren,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+göt verir,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götelek,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götlalesi,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götlek,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götoğlanı,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götoş,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götten,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götveren,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götü,4,107,58,0.5421,keep,train kesinliği yeterli
+götün,5,7,7,1.0,keep,train kesinliği yeterli
+götüne,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götüne koyim,12,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+götünekoyim,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+götünü,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+has siktir,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+hasiktir,8,3,3,1.0,keep,train kesinliği yeterli
+hassikome,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+hassiktir,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+hassittir,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+haysiyetsiz,11,5,4,0.8,keep,train kesinliği yeterli
+hayvan herif,12,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+hoşafı,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+hsktr,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+huur,3,5,1,0.2,drop,train kesinliği düşük (yanlış alarm riski)
+hödük,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ibina,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ibine,5,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ibinenin,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ibne,4,19,19,1.0,keep,train kesinliği yeterli
+ibnedir,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ibneleri,8,5,5,1.0,keep,train kesinliği yeterli
+ibnelik,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ibnelri,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ibneni,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ibnenin,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+ibnerator,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ibnesi,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+idiot,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+idiyot,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+imansz,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ipne,4,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+iserim,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+itoğlu it,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+işerim,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kafam girsin,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kafasiz,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+kafasız,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kahpe,5,27,23,0.8519,keep,train kesinliği yeterli
+kahpenin,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kahpenin feryadı,16,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kaka,4,6,3,0.5,keep,train kesinliği yeterli
+kaltak,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kancik,6,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+kancık,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kappe,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+karhane,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kavat,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+kavatn,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kaypak,6,4,4,1.0,keep,train kesinliği yeterli
+kayyum,5,14,3,0.2143,drop,train kesinliği düşük (yanlış alarm riski)
+kaşar,5,12,7,0.5833,keep,train kesinliği yeterli
+kerane,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kerhane,7,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+kerhanelerde,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kevase,6,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+kevaşe,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kevvase,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+koca göt,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kodumun,7,11,11,1.0,keep,train kesinliği yeterli
+kodumunun,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+koduumun,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+koduğmun,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+koduğmunun,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+koyarm,6,2,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+koyayım,7,2,1,0.5,keep,"train'de kanıt yok, uzunluk >= 4"
+koyiim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+koyiiym,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+koyim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+koyum,5,4,2,0.5,keep,train kesinliği yeterli
+koyyim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+krar,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+kukudaym,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+laciye boyadım,14,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+lavuk,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+liboş,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+madafaka,8,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+mal,3,70,50,0.7143,keep,train kesinliği yeterli
+malafat,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+malak,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+manyak,6,25,15,0.6,keep,train kesinliği yeterli
+mcik,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+meme,4,19,16,0.8421,keep,train kesinliği yeterli
+memelerini,10,3,2,0.6667,keep,train kesinliği yeterli
+mezveleli,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+minaamcık,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+mincikliyim,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+mna,3,1,1,1.0,drop,train'de kanıt yok ve kısa (< 4)
+monakkoluyum,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+motherfucker,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+mudik,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+o. çocuğu,9,4,4,1.0,keep,train kesinliği yeterli
+oc,2,10,9,0.9,keep,train kesinliği yeterli
+ocuu,3,3,1,0.3333,drop,train kesinliği düşük (yanlış alarm riski)
+ocuun,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orosbucocuu,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orospu,6,57,57,1.0,keep,train kesinliği yeterli
+orospu cocugu,13,40,40,1.0,keep,train kesinliği yeterli
+orospu çoc,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orospu çocukları,16,21,20,0.9524,keep,train kesinliği yeterli
+orospu çocuğu,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orospu çocuğudur,16,3,3,1.0,keep,train kesinliği yeterli
+orospucocugu,12,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+orospudur,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orospular,9,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+orospunun,9,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+orospunun evladı,16,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orospuydu,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orospuyuz,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orospuçocuğu,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orostoban,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+orostopol,9,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+orrospu,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+oruspu,6,6,6,1.0,keep,train kesinliği yeterli
+oruspu çocuğu,13,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+oruspuçocuğu,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+osbir,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ossurduum,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ossurmak,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ossuruk,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+osur,4,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+osurduu,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+osuruk,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+osururum,8,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+otuzbir,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+oç,2,0,0,,drop,train'de kanıt yok ve kısa (< 4)
+oğlan,5,25,9,0.36,drop,train kesinliği düşük (yanlış alarm riski)
+oğlancı,7,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+oğlu it,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+patlak zar,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+penis,5,5,4,0.8,keep,train kesinliği yeterli
+pezevek,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+pezeven,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+pezeveng,8,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+pezevengi,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+pezevengin evladı,17,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+pezevenk,8,18,18,1.0,keep,train kesinliği yeterli
+pezo,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+pic,3,15,14,0.9333,keep,train kesinliği yeterli
+pici,4,16,15,0.9375,keep,train kesinliği yeterli
+picler,6,13,13,1.0,keep,train kesinliği yeterli
+pipi,4,2,1,0.5,keep,"train'de kanıt yok, uzunluk >= 4"
+pipiş,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+pisliktir,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+piç,3,0,0,,drop,train'de kanıt yok ve kısa (< 4)
+piç kurusu,10,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+piçin oğlu,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+piçler,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+porno,5,18,13,0.7222,keep,train kesinliği yeterli
+pussy,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+puşt,4,10,9,0.9,keep,train kesinliği yeterli
+puşttur,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+rahminde,8,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+revizyonist,11,0,0,,drop,manuel dışlama: siyasi/tarihî terim; nötr
+sakso,5,10,9,0.9,keep,train kesinliği yeterli
+saksofon,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+salaak,5,104,80,0.7692,keep,train kesinliği yeterli
+salak,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+saxo,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sekis,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+serefsiz,8,147,131,0.8912,keep,train kesinliği yeterli
+sevgi koyarım,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sevişelim,9,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sexs,4,6,4,0.6667,keep,train kesinliği yeterli
+sicarsin,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sie,3,4,2,0.5,keep,train kesinliği yeterli
+sik,3,33,13,0.3939,drop,train kesinliği düşük (yanlış alarm riski)
+sikdi,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikdiğim,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sike,4,32,23,0.7188,keep,train kesinliği yeterli
+sikecem,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikem,5,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+siken,5,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikenin,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siker,5,10,10,1.0,keep,train kesinliği yeterli
+sikerim,7,22,22,1.0,keep,train kesinliği yeterli
+sikerler,8,4,4,1.0,keep,train kesinliği yeterli
+sikerm,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikersin,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikertir,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikertmek,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikesen,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikesicenin,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikey,5,4,1,0.25,drop,train kesinliği düşük (yanlış alarm riski)
+sikeydim,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikeyim,7,23,22,0.9565,keep,train kesinliği yeterli
+sikeym,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siki,4,35,14,0.4,drop,train kesinliği düşük (yanlış alarm riski)
+sikicem,7,4,4,1.0,keep,train kesinliği yeterli
+sikici,6,31,10,0.3226,drop,train kesinliği düşük (yanlış alarm riski)
+sikien,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikienler,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikiim,5,17,17,1.0,keep,train kesinliği yeterli
+sikiimm,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikiir,5,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikiirken,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikik,5,9,9,1.0,keep,train kesinliği yeterli
+sikil,5,85,19,0.2235,drop,train kesinliği düşük (yanlış alarm riski)
+sikildiini,9,0,0,,drop,"manuel dışlama: ""sıkıldığını"" biçimiyle çakışır"
+sikilesice,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikilmi,7,1,0,0.0,drop,"manuel dışlama: ""sıkılmı(ş)"" ile aynı eşleştirme anahtarı"
+sikilmie,8,0,0,,drop,"manuel dışlama: ""sıkılmı(ş)"" biçimiyle çakışır"
+sikilmis,8,4,2,0.5,drop,"manuel dışlama: ""sıkılmış"" ile aynı eşleştirme anahtarı"
+sikilmiş,8,0,0,,drop,"manuel dışlama: ""sıkılmış"" ile aynı eşleştirme anahtarı"
+sikilsin,8,0,0,,drop,"manuel dışlama: ""sıkılsın"" ile aynı eşleştirme anahtarı"
+sikim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikimde,7,4,4,1.0,keep,train kesinliği yeterli
+sikimden,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikime,6,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikimi,6,4,4,1.0,keep,train kesinliği yeterli
+sikimiin,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikimin,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikimle,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikimsonik,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikimtrak,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikin,5,132,18,0.1364,drop,train kesinliği düşük (yanlış alarm riski)
+sikinde,7,3,3,1.0,keep,train kesinliği yeterli
+sikinden,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikine,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikini,6,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikip,5,6,5,0.8333,keep,train kesinliği yeterli
+sikis,5,47,32,0.6809,keep,train kesinliği yeterli
+sikisek,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikisen,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikish,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikismis,8,3,1,0.3333,drop,train kesinliği düşük (yanlış alarm riski)
+sikitiin,7,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikiyim,7,8,7,0.875,keep,train kesinliği yeterli
+sikiym,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikiyorum,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikiş,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikişen,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikişme,7,6,6,1.0,keep,train kesinliği yeterli
+sikkim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikko,4,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikleri,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siklerii,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikli,5,3,0,0.0,drop,train kesinliği düşük (yanlış alarm riski)
+sikm,4,12,7,0.5833,keep,train kesinliği yeterli
+sikmek,6,11,11,1.0,keep,train kesinliği yeterli
+sikmem,6,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikmiler,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikmisligim,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikrm,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siksem,6,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikseydin,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikseyidin,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siksin,6,3,2,0.6667,keep,train kesinliği yeterli
+siksinbaya,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siksinler,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siksiz,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siksok,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siksz,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sikt,4,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sikti,5,18,9,0.5,keep,train kesinliği yeterli
+siktigimin,10,4,4,1.0,keep,train kesinliği yeterli
+siktigiminin,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktii,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktiim,6,2,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+siktiimin,8,3,3,1.0,keep,train kesinliği yeterli
+siktiiminin,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktiler,8,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+siktim,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktimin,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktiminin,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktir,6,45,44,0.9778,keep,train kesinliği yeterli
+siktir et,9,6,6,1.0,keep,train kesinliği yeterli
+siktir git,10,20,19,0.95,keep,train kesinliği yeterli
+siktir lan,10,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+siktir ol git,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktirgit,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktirir,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktiririm,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktiriyor,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktirolgit,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktiğim,8,6,6,1.0,keep,train kesinliği yeterli
+siktiğimin,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+siktiğiminin,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sittimin,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sittir,5,4,3,0.75,keep,train kesinliği yeterli
+skcem,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+skecem,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+skem,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sker,4,3,3,1.0,keep,train kesinliği yeterli
+skerim,6,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+skerm,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+skeyim,6,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+skiim,4,2,2,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+skik,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+skim,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+skime,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+skmek,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sksin,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sksn,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sksz,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sktiimin,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sktrr,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+skyim,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+slaleni,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokam,5,2,1,0.5,keep,"train'de kanıt yok, uzunluk >= 4"
+sokarim,7,8,6,0.75,keep,train kesinliği yeterli
+sokarm,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokarmkoduumun,13,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokarım,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokaym,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokayım,7,9,9,1.0,keep,train kesinliği yeterli
+sokiim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+soktuğumunun,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokuk,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokum,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokuyum,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sokuş,5,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+soxum,5,3,3,1.0,keep,train kesinliği yeterli
+sulaleni,8,6,4,0.6667,keep,train kesinliği yeterli
+sülaleni,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sülalenizi,10,1,0,0.0,keep,"train'de kanıt yok, uzunluk >= 4"
+sürtük,6,3,2,0.6667,keep,train kesinliği yeterli
+sıecem,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+sıçarım,7,3,3,1.0,keep,train kesinliği yeterli
+sıçtığım,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+taaklarn,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+taaklarna,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+tarrakimin,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+tasak,5,10,10,1.0,keep,train kesinliği yeterli
+tassak,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+taşak,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+taşşak,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+tipini sk,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+tipinizi skeyim,15,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+tiyniyat,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+toplarm,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+topsun,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+totoş,5,6,5,0.8333,keep,train kesinliği yeterli
+vajina,6,3,3,1.0,keep,train kesinliği yeterli
+vajinanı,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+veled,5,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+veled i zina,12,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+veledizina,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+verdiimin,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+weled,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+weledizina,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+whore,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+xikeyim,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yaaraa,4,252,65,0.2579,drop,train kesinliği düşük (yanlış alarm riski)
+yalama,6,32,26,0.8125,keep,train kesinliği yeterli
+yalarun,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yalarım,7,6,6,1.0,keep,train kesinliği yeterli
+yaraam,5,25,11,0.44,drop,train kesinliği düşük (yanlış alarm riski)
+yarak,5,14,14,1.0,keep,train kesinliği yeterli
+yaraksız,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yaraktr,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yaram,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yaraminbasi,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yaramn,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yararmorospunun,15,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarra,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarraa,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarraak,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarraam,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarraamı,6,21,6,0.2857,drop,train kesinliği düşük (yanlış alarm riski)
+yarragi,6,5,5,1.0,keep,train kesinliği yeterli
+yarragimi,8,5,5,1.0,keep,train kesinliği yeterli
+yarragina,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarragindan,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarragm,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarraimin,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarrak,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarram,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarramin,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarraminbaşı,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarramn,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarran,5,8,2,0.25,drop,train kesinliği düşük (yanlış alarm riski)
+yarrana,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarrağ,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yarrağım,7,4,4,1.0,keep,train kesinliği yeterli
+yarrağımı,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yavak,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yavuşak,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yavş,4,4,3,0.75,keep,train kesinliği yeterli
+yavşak,6,26,23,0.8846,keep,train kesinliği yeterli
+yavşaktır,9,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+yilisik,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+yogurtlayam,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yoğurtlayam,11,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yrrak,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+yılışık,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+zibidi,6,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+zigsin,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+zikeyim,7,1,1,1.0,keep,"train'de kanıt yok, uzunluk >= 4"
+zikiim,5,4,4,1.0,keep,train kesinliği yeterli
+zikik,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+zikim,5,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ziksiin,6,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+zulliyetini,10,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+zviyetini,9,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+zıkkımım,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+çük,3,4,1,0.25,drop,train kesinliği düşük (yanlış alarm riski)
+öküz,4,16,12,0.75,keep,train kesinliği yeterli
+öşex,4,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+ıbnelık,7,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+şerefsiz,8,0,0,,keep,"train'de kanıt yok, uzunluk >= 4"
+şıllık,5,3,2,0.6667,keep,train kesinliği yeterli

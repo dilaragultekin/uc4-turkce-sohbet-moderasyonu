@@ -1,0 +1,154 @@
+key,surface,train_count,train_off,smoothed_precision,manual_exclusion
+aq,aq,245,242,0.9813,
+orospu,orospu,107,106,0.976,
+amina,amına,45,45,0.9657,
+siktir,siktir,52,51,0.9516,
+amk,amk,305,291,0.9491,
+sikerim,sikerim,24,24,0.9379,
+belasini,belasını,32,31,0.9231,
+sikim,sikim,16,16,0.9104,
+sikeyim,sikeyim,26,25,0.9067,
+anani,ananı,15,15,0.9051,
+beyinsiz,beyinsiz,15,15,0.9051,
+mk,mk,33,31,0.8968,
+sikis,sikiş,23,22,0.8955,
+belani,belanı,13,13,0.8924,
+asagilik,aşağılık,13,13,0.8924,
+yarak,yarak,13,13,0.8924,
+gotu,götü,22,21,0.8911,
+belanizi,belanızı,20,19,0.8812,
+kodumun,kodumun,11,11,0.8759,
+sikmek,sikmek,11,11,0.8759,
+pezevenk,pezevenk,11,11,0.8759,
+serefsizler,şerefsizler,18,17,0.8693,
+azdim,azdım,18,17,0.8693,
+herif,herif,33,30,0.8682,
+serefsiz,şerefsiz,86,76,0.868,
+sikiselim,sikişelim,10,10,0.8655,
+gotune,götüne,10,10,0.8655,
+amcik,amcık,10,10,0.8655,
+sanalsex,sanalsex,10,10,0.8655,
+sanane,sanane,10,10,0.8655,gündelik kelime
+gotum,götüm,10,10,0.8655,
+pic,piç,17,16,0.8624,
+ananin,ananın,17,16,0.8624,
+gotunu,götünü,16,15,0.8548,
+utanmaz,utanmaz,16,15,0.8548,
+sokayim,sokayım,9,9,0.8533,
+gavat,gavat,9,9,0.8533,
+sikik,sikik,9,9,0.8533,
+turkporno,türkporno,9,9,0.8533,
+gerizekalilar,gerizekalılar,8,8,0.8386,
+ananizi,ananızı,8,8,0.8386,
+ibneler,ibneler,8,8,0.8386,
+bokunu,bokunu,8,8,0.8386,
+koyim,koyim,8,8,0.8386,
+ibne,ibne,8,8,0.8386,
+gerizekali,gerizekalı,45,39,0.838,
+bok,bok,72,61,0.8295,
+kahpe,kahpe,19,17,0.8279,
+yavsak,yavşak,19,17,0.8279,
+ahlaksiz,ahlaksız,19,17,0.8279,
+gotunuz,götünüz,7,7,0.8207,
+herifler,herifler,7,7,0.8207,
+bozuntusu,bozuntusu,7,7,0.8207,
+pici,piçi,7,7,0.8207,
+salaklar,salaklar,7,7,0.8207,
+kumpas,kumpas,7,7,0.8207,gündelik kelime
+yalamak,yalamak,7,7,0.8207,
+siker,siker,7,7,0.8207,
+avradini,avradını,7,7,0.8207,
+sikilmek,sikilmek,7,7,0.8207,"""sıkılmak"" ile aynı eşleştirme anahtarı"
+ami,amı,7,7,0.8207,
+sanalseks,sanalseks,7,7,0.8207,
+bosalma,boşalma,7,7,0.8207,
+picler,piçler,7,7,0.8207,
+anal,anal,12,11,0.8133,"önek eşleşmesi ""analiz"", ""analist"" kelimelerini yakalar"
+turbanli,türbanlı,17,15,0.8098,nötr grup tanımı; kimlik terimi hakaret sayılmamalı
+boka,boka,16,14,0.7992,
+hainleri,hainleri,11,10,0.799,haberlerde nötr kullanım
+chpk,chpkk,6,6,0.7983,
+toplulugu,topluluğu,6,6,0.7983,gündelik kelime
+aminakoyim,amınakoyim,6,6,0.7983,
+tasak,taşak,6,6,0.7983,
+siktigim,siktiğim,6,6,0.7983,
+amini,amını,6,6,0.7983,
+orosbu,orosbu,6,6,0.7983,
+sicayim,sıçayım,6,6,0.7983,
+beynine,beynine,6,6,0.7983,gündelik kelime
+pust,puşt,6,6,0.7983,
+yalarim,yalarım,6,6,0.7983,
+edepsiz,edepsiz,6,6,0.7983,
+embesil,embesil,6,6,0.7983,
+diyenin,diyenin,6,6,0.7983,gündelik kelime
+got,göt,40,33,0.7949,
+sex,sex,34,28,0.7885,
+yalaka,yalaka,10,9,0.7822,
+sakso,sakso,10,9,0.7822,
+oc,oç,10,9,0.7822,
+yalakalik,yalakalık,10,9,0.7822,
+guruh,güruh,10,9,0.7822,
+zekali,zekalı,14,12,0.7742,"tek başına nötr/olumlu (""çok zekalı"")"
+oruspu,oruspu,5,5,0.7695,
+diktatorluk,diktatörlük,5,5,0.7695,siyasi terim; haber/tartışma dilinde nötr
+siktirin,siktirin,5,5,0.7695,
+yalakasi,yalakası,5,5,0.7695,
+gerzek,gerzek,5,5,0.7695,
+serefsizdir,şerefsizdir,5,5,0.7695,
+sevici,sevici,5,5,0.7695,
+gotun,götün,5,5,0.7695,
+donek,dönek,5,5,0.7695,
+siktirmek,siktirmek,5,5,0.7695,
+odemek,ödemek,5,5,0.7695,gündelik kelime
+sikismek,sikişmek,5,5,0.7695,
+serefsizin,şerefsizin,5,5,0.7695,
+denizlieskort,denizlieskort,5,5,0.7695,
+denizliescort,denizliescort,5,5,0.7695,
+terbiyesizlik,terbiyesizlik,5,5,0.7695,
+cia,cıa,5,5,0.7695,kurum adı; nötr
+vasifsiz,vasıfsız,5,5,0.7695,
+igreniyorum,iğreniyorum,5,5,0.7695,
+soyu,soyu,5,5,0.7695,gündelik kelime
+densiz,densiz,5,5,0.7695,
+kafaniz,kafanız,5,5,0.7695,gündelik kelime
+surusu,sürüsü,5,5,0.7695,gündelik kelime
+mubah,mübah,5,5,0.7695,gündelik kelime
+karaktersiz,karaktersiz,18,15,0.7693,
+koyayim,koyayım,9,8,0.7624,
+utanin,utanın,9,8,0.7624,gündelik kelime
+hadini,haddini,9,8,0.7624,gündelik kelime
+yoksunu,yoksunu,13,11,0.7591,gündelik kelime
+swinger,swinger,13,11,0.7591,
+boktan,boktan,17,14,0.7572,
+anasini,anasını,32,25,0.7467,
+azgin,azgın,28,22,0.7462,
+ensest,ensest,20,16,0.7448,
+haini,haini,16,13,0.7437,haberlerde nötr kullanım
+gorunumlu,görünümlü,12,10,0.7419,gündelik kelime
+boku,boku,12,10,0.7419,
+comar,çomar,8,7,0.7386,
+serefsizlik,şerefsizlik,8,7,0.7386,
+malim,malım,8,7,0.7386,
+sikiyim,sikiyim,8,7,0.7386,
+arsiz,arsız,8,7,0.7386,
+yobaz,yobaz,8,7,0.7386,
+bencil,bencil,8,7,0.7386,gündelik kelime
+aglayin,ağlayın,8,7,0.7386,gündelik kelime
+salayan,sallayan,8,7,0.7386,gündelik kelime
+meme,meme,8,7,0.7386,
+utanmadan,utanmadan,19,15,0.7327,gündelik kelime
+esek,eşek,15,12,0.7286,
+turkifsa,türkifsa,11,9,0.722,
+beynini,beynini,11,9,0.722,gündelik kelime
+seref,şeref,25,19,0.718,"gündelik kelime (""şeref duydum"")"
+hirsiz,hırsız,21,16,0.7125,"haberlerde nötr kullanım (""hırsız yakalandı"")"
+enayi,enayi,7,6,0.7096,
+utanma,utanma,7,6,0.7096,gündelik kelime
+malar,mallar,7,6,0.7096,
+defol,defol,7,6,0.7096,
+emperyalist,emperyalist,7,6,0.7096,siyasi terim; haber/tartışma dilinde nötr
+beter,beter,31,23,0.7087,gündelik kelime
+porno,porno,17,13,0.7045,
+sapik,sapık,17,13,0.7045,
+les,leş,17,13,0.7045,
+denen,denen,37,27,0.7022,gündelik kelime

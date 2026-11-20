@@ -1,0 +1,31 @@
+model,type,idx,p_off,text
+bert_int8,false_positive,1041,0.9984,1. Sınıftayken 4 hafta devamsızlığı burda bitiremem diyordum aqsdf yüzümü okulda yıkamaya başladım aqsdf
+bert_int8,false_positive,1581,0.9984,@USER Eric Cantona da gelirmi ama sikolsu çok isterim.
+bert_int8,false_positive,2592,0.9968,"TV de   Erdoğan'a soruyorlar   İstanbul depreme hazır mı?   Cevap:Büyük depremde faturası ne olur belli değil.Ben bundan Endişeliyim korkuyorum      Bunu 25 senedir İstanbul'u,   17 senedir Türkiye'yi yöneten Cumhurbaşkanı söylüyor.      Allah belanı versin Lidyalılar ne hale getirdin İstanbul'u"
+bert_int8,false_positive,1033,0.9967,Az önce ablam bişey sordu he dedim yeğenim (2) he yok evet var edepsiz dedi folikasit çocuğu seni
+bert_int8,false_positive,411,0.9965,Gerizekalılar buna emin olun sizden çok Galatasaray taraftarı tepki gösterir. Ayrıca ofsaytı orta hakem vermiyor
+bert_int8,false_positive,729,0.9963,"Çok dertlisin aqam noldu sana?   Ağlayıp, o güldüğü fotoğraflarına bakıyordum yine)"
+bert_int8,false_positive,3154,0.9948,Cidden sinirlendim. Severim filan ama bu kopyacılık yaptıkları anlamını değiştirmez. Biz kopya çeksek olay olur ama... yg oyunlarına kanın kanın... güzel pazarlıyor
+bert_int8,false_positive,356,0.9942,"İmamoğluna yapılanlarla Galatasaraya yapılan oyunların bu sene aynı olduğunu düşünüyorum.. Ama unuttukları bişey var Allahın adaleti var hepsi sene başında yaptıkları bildiriyide, tükürdüklerinide unuttular.. Tebrikler @USER , @USER , @USER @USER 👏👏"
+bert_int8,false_positive,2031,0.9939,@USER @USER Fetöye en başta karşı çıkan cemaat. İçeriye sokmayın bunları diye ikitdar partisine karşı çıkan hoca dediğiniz o şarlatan amerikanın adamı diye bas bas bağıran ama bi türlü kendini duyuramayan tek cemaattir.  Süleymanlı cemaati. Sizde bu iftiralarla çok güzel yere gelrsnz
+bert_int8,false_positive,803,0.9939,Salah ın yavaş yavaş  müslüman  yaptığı taraftarı  90 dakikada dinden imandan çıkardın  karius
+bert_int8,false_positive,685,0.9917,İstifa diyen terbiyesizlik yapan bütün hesaplar bi gidin .! Saygısızlık etmeyin .
+bert_int8,false_positive,1868,0.9911,Seksten sonra çocuk olabilmesi için kadının da boşalması gerekseydi dünya nüfusu ne kadar olurdu bin kişi filan heralde
+bert_int8,false_positive,1109,0.991,@USER 😍😍 oooo hayırlı olsun bakalım...      Ağzıbozuğun karşısında onun sizi çekmek isteyeceği seviyesizliğe düşmeyin bize yeter sayın Vekilim 👍🏻      #chp #secim2018
+bert_int8,false_positive,2366,0.9909,@USER @USER Ne iş yapıyorsa oradan yürüyorlar. Akıllandılar artık. Korkarımki İstanbul irticanın hortladığı yer olacak. 😂😂
+bert_int8,false_positive,1299,0.9907,@USER @USER Bence kirasını versin sonuçta haram geçmez kursağından geçmeniş muammerde şahit olur
+bert_int8,false_negative,2655,0.0035,@USER @USER Haci abine gonderecegin yorumu sayin Tanala gondermissiniz.😂😂Ne kullanmisin sabah sabah?Yoksa geceden kalma hasar mi var?
+bert_int8,false_negative,1380,0.0037,Sipammmmm yaa    Geldi hem laptopu aldı    Hem de beni esir aldı 😂😂
+bert_int8,false_negative,2948,0.004,Senelerce doğruyum çalışkanım büyüklerimi saymak küçüklerimi korumak dedikte hani doğru adam hani çalışkan adam hani büyüğüne saygılı vatandaş??? Bunları papağan misali dile dolayacağınıza zihinlere kazıyın #OkullardaANDIMIZOkutulsun
+bert_int8,false_negative,603,0.004,"O günler geçti canımıniçi, bir daha karşılaşmamak dileğiyle"
+bert_int8,false_negative,1618,0.0043,"@USER @USER merhaba efenfim.   orası doğru. yalnız der spigel ""das zeitalter der autokraten"" derken, reisicumhur ""dünyayı şekillendiren liderler"" yazıldı sanıyor! (:"
+bert_int8,false_negative,2126,0.0044,"Merve fanlari kucuk daglari biz yarattik havasinda gibi gorunuyor hala.Merve’nin elenip bu kadar konusulmasi onun samimiyetinden veya ortaya koydugu saglam karakterden degil,uyanin sabah oldu guzel kardeslerim ahdkajakab #Survivor2018"
+bert_int8,false_negative,668,0.0045,@USER Rastgele yururken aklına geleyim sızlasın icin
+bert_int8,false_negative,2669,0.0045,@USER yapram bende diyorum kı yeni sezon by17 imzalı vereyım sana çok istiyorsan :D
+bert_int8,false_negative,18,0.0054,TRUMP ne demiş    Suriyeden kısa zaman içinde çıkacağız    #ProjeTerörÖrgütleri ne verdiğin sil da alıp DEFOL TRUMP
+bert_int8,false_negative,523,0.0055,"Kerimcan,  #reynmen ... kimleri nerelere getiriyoruz az dikkat lütfen"
+bert_int8,false_negative,1799,0.0058,Dün Maçka'da öpüşürken bir grup keko videomuzu çekti. Acaba yayınlarla mı?
+bert_int8,false_negative,2863,0.0059,Ay ben yine samimiyetsiz saatlerime geldim en iyisi yatmak
+bert_int8,false_negative,483,0.0066,@USER Son dizisinden sonra biraz daha unutulsun. Hatta askere gitsin 2 sene gelmesin mümkünse.
+bert_int8,false_negative,1883,0.0067,Dünya güzeli kızları semt kekolarıyla gördüğümden beri adalet sorgulamıyorum bu ülkede
+bert_int8,false_negative,2495,0.0067,"Yaşanan olaylarda tolga neden hiç konuşulmuyor taraftarın yaptığı hiçbir şeyi kesinlikle tasvip etmiyorum ama enbüyük suçlu tolga degilmidir bir futbolcu olarak rakip taraftara neden cvp veriyor kulaklarını kapaması gerekmezmiydi, butepkilerle karşılaşan ilk futbolcumu. #SonSayfa"

@@ -1,0 +1,705 @@
+# UC4 saldırgan dil sözlüğü — build_lexicon.py tarafından üretildi, elle düzenlemeyin.
+# Kaynaklar: ooguz/turkce-kufur-karaliste (CC-BY-SA-4.0) + OffensEval-TR train istatistikleri
+# Girdi sayısı: 702
+abaza
+abazan
+ag
+ahlaksız
+ahmak
+allahsız
+am
+am biti
+amarım
+ambiti
+amcik
+amck
+amckl
+amcklama
+amcklaryla
+amckta
+amcktan
+amcuk
+amcık
+amcık hoşafı
+amcıklama
+amcıklandı
+amcığı
+amcığın
+amcığını
+amcığınızı
+amin oglu
+amina
+amina g
+amina k
+amina koyarim
+amina koyayim
+amina koyayım
+aminako
+aminakoyarim
+aminakoyim
+aminda
+amindan
+amindayken
+amini
+aminiyarraaniskiim
+aminoglu
+amiyum
+amk
+amk çocuğu
+amkafa
+amlarnzn
+amlı
+ammak
+ammna
+amna
+amnda
+amndaki
+amngtn
+amona
+amq
+amsiz
+amsz
+amsız
+amteri
+amugaa
+amuna
+amuğa
+amı
+amık
+amın feryadı
+amın oglu
+amın oğlu
+amına
+amına koy
+amına koyarım
+amına koyayım
+amına koyyim
+amına s
+amına sikem
+amına sokam
+amınako
+amınakoyim
+amınoğlu
+amını
+amını s
+amısına
+amısını
+analarn
+anamla
+anan
+anana
+anandan
+anani
+anani sikerim
+anani sikeyim
+ananin
+ananisikerim
+ananisikeyim
+anann
+ananz
+ananı
+ananı sikerim
+ananı sikeyim
+ananın
+ananın am
+ananın amı
+ananın dölü
+ananınki
+ananısikerim
+ananısikeyim
+ananızı
+ananızın
+ananızın am
+anasi
+anası orospu
+anasını
+anasının am
+anayin
+angut
+anneni
+annesiz
+anuna
+aptal
+aq
+arsız
+atkafası
+atmık
+attrrm
+attırdığım
+auzlu
+avradını
+avrat
+ayklarmalrmsikerim
+azdım
+azdırıcı
+azgın
+ağzına sıçayım
+aşağılık
+babaannesi kaşar
+babanı
+babası pezevenk
+bacağına sıçayım
+bacini
+bacn
+bacndan
+bacy
+bacına
+bacını
+bacının
+bastard
+belanı
+belanızı
+belasını
+beyinsiz
+bitch
+biting
+bok
+boka
+bokbok
+bokhu
+bokkumu
+boklar
+boktan
+boku
+bokubokuna
+bokum
+bokunu
+bokça
+bombok
+boner
+bosalmak
+bozuntusu
+boşalma
+boşalmak
+bızır
+cenabet
+chpkk
+cibiliyetsiz
+cibilliyetini
+cibilliyetsiz
+dalaksız
+dallama
+daltassak
+dalyarak
+dalyarrak
+dangalak
+dassagi
+defol
+denizliescort
+denizlieskort
+densiz
+diktim
+dildo
+dingil
+dingilini
+dinsiz
+dkerim
+domal
+domalan
+domaldı
+domaldın
+domalmak
+domalmış
+domalsın
+domalt
+domaltarak
+domaltip
+domaltmak
+domaltıp
+domaltır
+domaltırım
+domalık
+domalıyor
+dönek
+eben
+ebeni
+ebenin
+ebeninki
+ebleh
+ecdadini
+ecdadını
+edepsiz
+embesil
+emi
+enayi
+ensest
+eşek
+fahise
+fahişe
+feriştah
+ferre
+fuck
+fucker
+fuckin
+fucking
+gavad
+gavat
+geber
+geberik
+gebermek
+gebermiş
+gebertir
+gerizekali
+gerizekalı
+gerizekalılar
+gerzek
+gerızekalı
+giberim
+giberler
+gibiş
+gibmek
+gibtiler
+goddamn
+godoş
+godumun
+gotelek
+gotlalesi
+gotlu
+gotten
+gotundeki
+gotunden
+gotune
+gotunu
+gotveren
+goyiim
+goyum
+goyuyim
+goyyim
+gtelek
+gtnde
+gtnden
+gtne
+gtten
+gtveren
+göt
+göt deliği
+göt herif
+göt oğlanı
+göt veren
+göt verir
+götelek
+götlalesi
+götlek
+götoğlanı
+götoş
+götten
+götveren
+götü
+götüm
+götün
+götüne
+götüne koyim
+götünekoyim
+götünü
+götünüz
+güruh
+has siktir
+hasiktir
+hassikome
+hassiktir
+hassittir
+haysiyetsiz
+hayvan herif
+herif
+herifler
+hoşafı
+hsktr
+hödük
+ibina
+ibine
+ibinenin
+ibne
+ibnedir
+ibneler
+ibneleri
+ibnelik
+ibnelri
+ibneni
+ibnenin
+ibnerator
+ibnesi
+idiot
+idiyot
+imansz
+ipne
+iserim
+itoğlu it
+iğreniyorum
+işerim
+kafam girsin
+kafasiz
+kafasız
+kahpe
+kahpenin
+kahpenin feryadı
+kaka
+kaltak
+kancik
+kancık
+kappe
+karaktersiz
+karhane
+kavat
+kavatn
+kaypak
+kaşar
+kerane
+kerhane
+kerhanelerde
+kevase
+kevaşe
+kevvase
+koca göt
+kodumun
+kodumunun
+koduumun
+koduğmun
+koduğmunun
+koyarm
+koyayım
+koyiim
+koyiiym
+koyim
+koyum
+koyyim
+krar
+kukudaym
+laciye boyadım
+lavuk
+leş
+liboş
+madafaka
+mal
+malafat
+malak
+mallar
+malım
+manyak
+mcik
+meme
+memelerini
+mezveleli
+minaamcık
+mincikliyim
+mk
+monakkoluyum
+motherfucker
+mudik
+o. çocuğu
+oc
+ocuun
+orosbu
+orosbucocuu
+orospu
+orospu cocugu
+orospu çoc
+orospu çocukları
+orospu çocuğu
+orospu çocuğudur
+orospucocugu
+orospudur
+orospular
+orospunun
+orospunun evladı
+orospuydu
+orospuyuz
+orospuçocuğu
+orostoban
+orostopol
+orrospu
+oruspu
+oruspu çocuğu
+oruspuçocuğu
+osbir
+ossurduum
+ossurmak
+ossuruk
+osur
+osurduu
+osuruk
+osururum
+otuzbir
+oç
+oğlancı
+oğlu it
+patlak zar
+penis
+pezevek
+pezeven
+pezeveng
+pezevengi
+pezevengin evladı
+pezevenk
+pezo
+pic
+pici
+picler
+pipi
+pipiş
+pisliktir
+piç
+piç kurusu
+piçi
+piçin oğlu
+piçler
+porno
+pussy
+puşt
+puşttur
+rahminde
+sakso
+saksofon
+salaak
+salak
+salaklar
+sanalseks
+sanalsex
+sapık
+saxo
+sekis
+serefsiz
+sevgi koyarım
+sevici
+sevişelim
+sex
+sexs
+sicarsin
+sie
+sikdi
+sikdiğim
+sike
+sikecem
+sikem
+siken
+sikenin
+siker
+sikerim
+sikerler
+sikerm
+sikersin
+sikertir
+sikertmek
+sikesen
+sikesicenin
+sikeydim
+sikeyim
+sikeym
+sikicem
+sikien
+sikienler
+sikiim
+sikiimm
+sikiir
+sikiirken
+sikik
+sikilesice
+sikim
+sikimde
+sikimden
+sikime
+sikimi
+sikimiin
+sikimin
+sikimle
+sikimsonik
+sikimtrak
+sikinde
+sikinden
+sikine
+sikini
+sikip
+sikis
+sikisek
+sikisen
+sikish
+sikitiin
+sikiyim
+sikiym
+sikiyorum
+sikiş
+sikişelim
+sikişen
+sikişme
+sikişmek
+sikkim
+sikko
+sikleri
+siklerii
+sikm
+sikmek
+sikmem
+sikmiler
+sikmisligim
+sikrm
+siksem
+sikseydin
+sikseyidin
+siksin
+siksinbaya
+siksinler
+siksiz
+siksok
+siksz
+sikt
+sikti
+siktigimin
+siktigiminin
+siktii
+siktiim
+siktiimin
+siktiiminin
+siktiler
+siktim
+siktimin
+siktiminin
+siktir
+siktir et
+siktir git
+siktir lan
+siktir ol git
+siktirgit
+siktirin
+siktirir
+siktiririm
+siktiriyor
+siktirmek
+siktirolgit
+siktiğim
+siktiğimin
+siktiğiminin
+sittimin
+sittir
+skcem
+skecem
+skem
+sker
+skerim
+skerm
+skeyim
+skiim
+skik
+skim
+skime
+skmek
+sksin
+sksn
+sksz
+sktiimin
+sktrr
+skyim
+slaleni
+sokam
+sokarim
+sokarm
+sokarmkoduumun
+sokarım
+sokaym
+sokayım
+sokiim
+soktuğumunun
+sokuk
+sokum
+sokuyum
+sokuş
+soxum
+sulaleni
+swinger
+sülaleni
+sülalenizi
+sürtük
+sıecem
+sıçarım
+sıçayım
+sıçtığım
+taaklarn
+taaklarna
+tarrakimin
+tasak
+tassak
+taşak
+taşşak
+terbiyesizlik
+tipini sk
+tipinizi skeyim
+tiyniyat
+toplarm
+topsun
+totoş
+türkifsa
+türkporno
+utanmaz
+vajina
+vajinanı
+vasıfsız
+veled
+veled i zina
+veledizina
+verdiimin
+weled
+weledizina
+whore
+xikeyim
+yalaka
+yalakalık
+yalakası
+yalama
+yalamak
+yalarun
+yalarım
+yarak
+yaraksız
+yaraktr
+yaram
+yaraminbasi
+yaramn
+yararmorospunun
+yarra
+yarraa
+yarraak
+yarraam
+yarragi
+yarragimi
+yarragina
+yarragindan
+yarragm
+yarraimin
+yarrak
+yarram
+yarramin
+yarraminbaşı
+yarramn
+yarrana
+yarrağ
+yarrağım
+yarrağımı
+yavak
+yavuşak
+yavş
+yavşak
+yavşaktır
+yilisik
+yobaz
+yogurtlayam
+yoğurtlayam
+yrrak
+yılışık
+zibidi
+zigsin
+zikeyim
+zikiim
+zikik
+zikim
+ziksiin
+zulliyetini
+zviyetini
+zıkkımım
+çomar
+öküz
+öşex
+ıbnelık
+şerefsiz
+şerefsizdir
+şerefsizin
+şerefsizler
+şerefsizlik
+şıllık

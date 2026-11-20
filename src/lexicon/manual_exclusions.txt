@@ -1,0 +1,56 @@
+# Manuel dışlama listesi — build_lexicon.py bu kelimeleri HER İKİ kaynaktan da çıkarır.
+# Biçim: kelime<TAB>gerekçe
+# Kural: Tek başına, bağlam olmadan saldırgan olmayan kelime sözlükte olmamalı.
+# Karar tarihi: 2026-11-19. Test seti bu kararda KULLANILMADI (henüz hiçbir model test setinde
+# değerlendirilmedi); kararlar kelime anlamına ve train istatistiklerine dayanır.
+# Eşleştirme anahtarı (küçük harf + ş→s katlama + tekrar sıkıştırma) üzerinden uygulanır.
+
+# A1 — Kimlik ve siyaset terimleri (önyargı riski)
+türbanlı	nötr grup tanımı; kimlik terimi hakaret sayılmamalı
+emperyalist	siyasi terim; haber/tartışma dilinde nötr
+diktatörlük	siyasi terim; haber/tartışma dilinde nötr
+cıa	kurum adı; nötr
+revizyonist	siyasi/tarihî terim; nötr
+
+# A2 — Gündelik kelimeler (train'de tesadüfen saldırgan tweetlerle birlikte geçmiş)
+şeref	gündelik kelime ("şeref duydum")
+ödemek	gündelik kelime
+denen	gündelik kelime
+görünümlü	gündelik kelime
+topluluğu	gündelik kelime
+soyu	gündelik kelime
+sürüsü	gündelik kelime
+kafanız	gündelik kelime
+beter	gündelik kelime
+sallayan	gündelik kelime
+mübah	gündelik kelime
+kumpas	gündelik kelime
+haddini	gündelik kelime
+yoksunu	gündelik kelime
+diyenin	gündelik kelime
+utanma	gündelik kelime
+utanmadan	gündelik kelime
+utanın	gündelik kelime
+ağlayın	gündelik kelime
+sanane	gündelik kelime
+bencil	gündelik kelime
+beynine	gündelik kelime
+beynini	gündelik kelime
+zekalı	tek başına nötr/olumlu ("çok zekalı")
+
+# B1 — Önek çakışması
+anal	önek eşleşmesi "analiz", "analist" kelimelerini yakalar
+
+# B2 — Karakter katlama çakışması (ı → i): "sıkılmak / sıkılmış" ile aynı anahtar
+sikilmek	"sıkılmak" ile aynı eşleştirme anahtarı
+sikildiini	"sıkıldığını" biçimiyle çakışır
+sikilmi	"sıkılmı(ş)" ile aynı eşleştirme anahtarı
+sikilmie	"sıkılmı(ş)" biçimiyle çakışır
+sikilmis	"sıkılmış" ile aynı eşleştirme anahtarı
+sikilmiş	"sıkılmış" ile aynı eşleştirme anahtarı
+sikilsin	"sıkılsın" ile aynı eşleştirme anahtarı
+
+# C1 — Suçlama içeren ama haberlerde nötr geçen kelimeler
+hırsız	haberlerde nötr kullanım ("hırsız yakalandı")
+haini	haberlerde nötr kullanım
+hainleri	haberlerde nötr kullanım

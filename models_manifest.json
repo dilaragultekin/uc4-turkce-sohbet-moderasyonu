@@ -1,0 +1,150 @@
+{
+  "repo_id": "Dilara00004/uc4-turkce-sohbet-moderasyonu",
+  "revision": "318d12d0640fa47043a3754f9dd1a50e547aeb73",
+  "created_utc": "2026-11-20T18:15:33Z",
+  "note": "Model dosyaları git'te değil; src/model_store.py bu listeye göre indirir ve SHA-256 ile doğrular.",
+  "files": [
+    {
+      "path": "bertturk/config.json",
+      "bytes": 806,
+      "sha256": "7c39f602485c8081a6ff4a7101bca470e8e9aef1204ef6f4082f08cb494b41aa",
+      "used_by": [
+        "bert"
+      ]
+    },
+    {
+      "path": "bertturk/env_colab_v2.txt",
+      "bytes": 14193,
+      "sha256": "f835d93843a0381f4740dae539ffdfb1db45d29b6419b5698b52d5989bd3e824",
+      "used_by": [
+        "bert"
+      ]
+    },
+    {
+      "path": "bertturk/meta.json",
+      "bytes": 1510,
+      "sha256": "9fb96dbbbc24ab356ed726bf68a834a1facbf663b44e79e0388c07f58ec7e5d3",
+      "used_by": [
+        "bert"
+      ]
+    },
+    {
+      "path": "bertturk/model.safetensors",
+      "bytes": 442499064,
+      "sha256": "6570940ef2bd203c80eb9afb0287e018a70cada23bd8dfcabc4a1e5160742dc6",
+      "used_by": [
+        "bert"
+      ]
+    },
+    {
+      "path": "bertturk/tokenizer.json",
+      "bytes": 754624,
+      "sha256": "c0ba99506f151b2370389936d2eec8483ddcb35594d2e3a147321e6d71a2a13e",
+      "used_by": [
+        "bert"
+      ]
+    },
+    {
+      "path": "bertturk/tokenizer_config.json",
+      "bytes": 370,
+      "sha256": "4e5738ad97f034b944ce8b7b8c3165f7a6333b524b7b77044f7e9e9b963f4dea",
+      "used_by": [
+        "bert"
+      ]
+    },
+    {
+      "path": "bertturk_int8/config.json",
+      "bytes": 842,
+      "sha256": "66ac723f91fac0e64d0e4a7e43c42589216973c4a4260fa435a44eb615ee9514",
+      "used_by": [
+        "bert_int8"
+      ]
+    },
+    {
+      "path": "bertturk_int8/meta.json",
+      "bytes": 1848,
+      "sha256": "0bcffa3296e2c109c01d496d54c1de1ae489d30c95b28654a8beff1565dfc314",
+      "used_by": [
+        "bert_int8"
+      ]
+    },
+    {
+      "path": "bertturk_int8/model_int8.pt",
+      "bytes": 186033989,
+      "sha256": "3580141574e75da756fe911b5df37c1f91c36d076e3a979682db0b9bccf4c308",
+      "used_by": [
+        "bert_int8"
+      ]
+    },
+    {
+      "path": "bertturk_int8/tokenizer.json",
+      "bytes": 754624,
+      "sha256": "c0ba99506f151b2370389936d2eec8483ddcb35594d2e3a147321e6d71a2a13e",
+      "used_by": [
+        "bert_int8"
+      ]
+    },
+    {
+      "path": "bertturk_int8/tokenizer_config.json",
+      "bytes": 497,
+      "sha256": "056adb628ef1148179fe165d771273d5e250ed7633b3306ab6d5881a22e1c9be",
+      "used_by": [
+        "bert_int8"
+      ]
+    },
+    {
+      "path": "nn/config.json",
+      "bytes": 172,
+      "sha256": "d13726df2f9397226f00f5ffc9a7069893db6baf74c747c857b8db191d370879",
+      "used_by": [
+        "nn"
+      ]
+    },
+    {
+      "path": "nn/meta.json",
+      "bytes": 4979,
+      "sha256": "518fef62ca20e0394d820ccd28f763ec4fe1414661cd8b9f0dc83ac7afab0d70",
+      "used_by": [
+        "nn"
+      ]
+    },
+    {
+      "path": "nn/model.pt",
+      "bytes": 25163179,
+      "sha256": "db146c5998b2d8b70c324bd1154a1ebced1bcff6c01b7611f09bab2f95f33b4f",
+      "used_by": [
+        "nn"
+      ]
+    },
+    {
+      "path": "nn/vocab.json",
+      "bytes": 637017,
+      "sha256": "04b1a323f6366d46200c96eb4e6157ca8ff5d18e68616957cc2e9fc1560c6fc9",
+      "used_by": [
+        "nn"
+      ]
+    },
+    {
+      "path": "tfidf/meta.json",
+      "bytes": 3142,
+      "sha256": "be1516c7b9a869899ecd01691b1864e7c6d6b8836f98628f0c0ef5025b115c6a",
+      "used_by": [
+        "tfidf"
+      ]
+    },
+    {
+      "path": "tfidf/model.joblib",
+      "bytes": 6900464,
+      "sha256": "8ae6c4852e9ec906b683f3605533bab4060037d0746dbf0faa0e419ee4b9e82e",
+      "used_by": [
+        "tfidf"
+      ]
+    },
+    {
+      "path": "w2v/w2v.model",
+      "bytes": 49952255,
+      "sha256": "9b140623d988db716d8217769290cf73bfae99548441fbfc058ea8211ac810cc",
+      "used_by": []
+    }
+  ]
+}

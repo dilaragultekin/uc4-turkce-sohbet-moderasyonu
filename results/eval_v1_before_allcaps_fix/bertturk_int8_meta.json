@@ -1,0 +1,71 @@
+{
+  "method": "torch.ao.quantization.quantize_dynamic, nn.Linear → qint8",
+  "engine": "onednn",
+  "torch": "2.15.0+cpu",
+  "int8_linear_layers": 74,
+  "fp32_linear_layers": 0,
+  "kept_fp32": "embeddings, LayerNorm",
+  "threshold": 0.62,
+  "dev_metrics": {
+    "macro_f1": 0.8118368453739908,
+    "f1_off": 0.6918238993710691,
+    "f1_not": 0.9318497913769124,
+    "precision_off": 0.7308970099667774,
+    "recall_off": 0.6567164179104478,
+    "accuracy": 0.8883826879271071,
+    "confusion_matrix": [
+      [
+        1340,
+        81
+      ],
+      [
+        115,
+        220
+      ]
+    ],
+    "threshold": 0.62,
+    "n": 1756
+  },
+  "dev_metrics_fp32": {
+    "macro_f1": 0.8125376199010128,
+    "f1_off": 0.6897689768976898,
+    "f1_not": 0.9353062629043358,
+    "precision_off": 0.7712177121771218,
+    "recall_off": 0.6238805970149254,
+    "accuracy": 0.8929384965831435,
+    "confusion_matrix": [
+      [
+        1359,
+        62
+      ],
+      [
+        126,
+        209
+      ]
+    ],
+    "threshold": 0.85,
+    "n": 1756
+  },
+  "dev_agreement_with_fp32": 0.9772209567198178,
+  "dev_mean_abs_prob_diff": 0.0269650649279356,
+  "save_reload_max_abs_diff_same_input": 0.0,
+  "eval_batch_size_int8": 1,
+  "batch_effect_int8": {
+    "mean_abs_prob_diff_b1_vs_b32": 0.02744620107114315,
+    "max_abs_prob_diff_b1_vs_b32": 0.8391504287719727,
+    "reason": "dinamik aktivasyon ölçeği dolgu tokenlarını da içerir"
+  },
+  "size_mb": {
+    "fp32": 442.499064,
+    "int8": 186.033989
+  },
+  "dev_seconds_cpu": {
+    "fp32_batch32": 70.5147123336792,
+    "int8_batch32": 32.695515871047974,
+    "int8_batch1": 33.53397226333618,
+    "threads": 4
+  },
+  "source": "models\\bertturk",
+  "selected_on": "dev",
+  "test_set_used": false
+}

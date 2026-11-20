@@ -1,0 +1,167 @@
+{
+  "sources": {
+    "external": {
+      "url": "https://raw.githubusercontent.com/ooguz/turkce-kufur-karaliste/56962ae66c3160871e1b9a4ba70f94c90e5a64e5/karaliste.txt",
+      "license": "CC-BY-SA-4.0",
+      "sha256": "0f5a05f52c414e07be8d67b1010979a901a974f573c7d47430f3cb5d3eace20b",
+      "unique_entries": 688
+    },
+    "data_driven": "OffensEval-TR 2020 train split (stefan-it bölümü), yalnızca train"
+  },
+  "rules": {
+    "min_support": 3,
+    "safe_min_count": 20,
+    "safe_max_precision": 0.3,
+    "known_min_count": 3,
+    "smoothing_a": 2.0,
+    "fuzzy_scope": "yalnızca bilinmeyen tokenlar (non-word ilkesi)",
+    "prefix_min_len": 4,
+    "max_suffix_len": 6,
+    "matching_key": "Türkçe küçük harf + ASCII katlama + tekrar sıkıştırma"
+  },
+  "selected_config": {
+    "use_external": true,
+    "p_ext": 0.5,
+    "dd_min_off": 5,
+    "p_dd": 0.7,
+    "fuzzy": "7/99",
+    "selectable": true,
+    "lexicon_size": 702,
+    "dev_macro_f1": 0.6919,
+    "dev_precision_off": 0.7041,
+    "dev_recall_off": 0.3552,
+    "dev_fuzzy_matches": 10
+  },
+  "matcher_params": {
+    "fuzzy_min_len": 7,
+    "two_edit_min_len": 99
+  },
+  "threshold": 0.5,
+  "lexicon_size": 702,
+  "external_kept": 636,
+  "external_dropped": 52,
+  "data_driven_kept": 66,
+  "safe_words": 1947,
+  "known_words": 17626,
+  "dev_metrics": {
+    "macro_f1": 0.6918956855791962,
+    "f1_off": 0.4722222222222222,
+    "f1_not": 0.9115691489361702,
+    "precision_off": 0.7041420118343196,
+    "recall_off": 0.35522388059701493,
+    "accuracy": 0.8485193621867881,
+    "confusion_matrix": [
+      [
+        1371,
+        50
+      ],
+      [
+        216,
+        119
+      ]
+    ],
+    "threshold": 0.5,
+    "n": 1756
+  },
+  "dev_metrics_fuzzy_off_ablation": {
+    "macro_f1": 0.6907570902930531,
+    "f1_off": 0.4686868686868687,
+    "f1_not": 0.9128273118992376,
+    "precision_off": 0.725,
+    "recall_off": 0.34626865671641793,
+    "accuracy": 0.8502277904328018,
+    "confusion_matrix": [
+      [
+        1377,
+        44
+      ],
+      [
+        219,
+        116
+      ]
+    ],
+    "threshold": 0.5,
+    "n": 1756
+  },
+  "train_metrics_info_only": {
+    "macro_f1": 0.7202155737695479,
+    "f1_off": 0.5242545616377392,
+    "f1_not": 0.9161765859013565,
+    "precision_off": 0.7380952380952381,
+    "recall_off": 0.4064872325741891,
+    "accuracy": 0.8574666666666667,
+    "confusion_matrix": [
+      [
+        23368,
+        836
+      ],
+      [
+        3440,
+        2356
+      ]
+    ],
+    "threshold": 0.5,
+    "n": 30000
+  },
+  "dev_match_kinds": {
+    "exact": 153,
+    "prefix": 60,
+    "fuzzy": 10,
+    "multiword": 4
+  },
+  "grid_size": 92,
+  "manual_exclusions": {
+    "file": "src/lexicon/manual_exclusions.txt",
+    "sha256": "fae53cea24a51065a71459ac4d6dbd12eb342a4016cc3070523c579d33a94dfc",
+    "listed": 39,
+    "rule": "tek başına, bağlam olmadan saldırgan olmayan kelime sözlükte olmamalı",
+    "removed_from_external": [
+      "anal",
+      "revizyonist",
+      "sikildiini",
+      "sikilmi",
+      "sikilmie",
+      "sikilmis",
+      "sikilmiş",
+      "sikilsin"
+    ],
+    "removed_from_data_driven": [
+      "anal",
+      "ağlayın",
+      "bencil",
+      "beter",
+      "beynine",
+      "beynini",
+      "cıa",
+      "denen",
+      "diktatörlük",
+      "diyenin",
+      "emperyalist",
+      "görünümlü",
+      "haddini",
+      "haini",
+      "hainleri",
+      "hırsız",
+      "kafanız",
+      "kumpas",
+      "mübah",
+      "sallayan",
+      "sanane",
+      "sikilmek",
+      "soyu",
+      "sürüsü",
+      "topluluğu",
+      "türbanlı",
+      "utanma",
+      "utanmadan",
+      "utanın",
+      "yoksunu",
+      "zekalı",
+      "ödemek",
+      "şeref"
+    ],
+    "decided_without_test_set": true
+  },
+  "test_set_used": false,
+  "runtime_sec": 34.8
+}

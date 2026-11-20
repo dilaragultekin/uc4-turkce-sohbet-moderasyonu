@@ -1,0 +1,200 @@
+{
+  "hardware": {
+    "cpu": "13th Gen Intel(R) Core(TM) i7-13650HX",
+    "logical_cpus": 20,
+    "torch_threads": 4,
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "torch": "2.15.0+cpu",
+    "cuda_visible": false
+  },
+  "latency_protocol": {
+    "runs": 200,
+    "warmup": 10,
+    "batch_size": 1,
+    "end_to_end": true,
+    "sample_seed": 0,
+    "budget_ms": 50.0,
+    "budget_criterion": "p95"
+  },
+  "models": {
+    "rule": {
+      "test_metrics": {
+        "macro_f1": 0.7131205063477594,
+        "f1_off": 0.5173951828724354,
+        "f1_not": 0.9088458298230834,
+        "precision_off": 0.7160493827160493,
+        "recall_off": 0.40502793296089384,
+        "accuracy": 0.846655328798186,
+        "confusion_matrix": [
+          [
+            2697,
+            115
+          ],
+          [
+            426,
+            290
+          ]
+        ],
+        "threshold": 0.5,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 0.11384700024791528,
+        "median_ms": 0.09469999349676073,
+        "p95_ms": 0.2716100018005818,
+        "max_ms": 0.41039999632630497
+      },
+      "size_mb": 0.20030699999999999,
+      "threshold": 0.5,
+      "eval_sec": 0.5,
+      "backend": null,
+      "dev_macro_f1": 0.6918956855791962
+    },
+    "tfidf": {
+      "test_metrics": {
+        "macro_f1": 0.7697350273090533,
+        "f1_off": 0.6339779005524862,
+        "f1_not": 0.9054921540656206,
+        "precision_off": 0.6270491803278688,
+        "recall_off": 0.6410614525139665,
+        "accuracy": 0.8497732426303855,
+        "confusion_matrix": [
+          [
+            2539,
+            273
+          ],
+          [
+            257,
+            459
+          ]
+        ],
+        "threshold": 0.53,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 0.9585419998620637,
+        "median_ms": 0.9244499960914254,
+        "p95_ms": 1.2580650123709345,
+        "max_ms": 1.8206999957328662
+      },
+      "size_mb": 6.900464,
+      "threshold": 0.53,
+      "eval_sec": 0.8,
+      "backend": null,
+      "dev_macro_f1": 0.7458783107726445
+    },
+    "nn": {
+      "test_metrics": {
+        "macro_f1": 0.71465528086215,
+        "f1_off": 0.5513585155732273,
+        "f1_not": 0.8779520461510727,
+        "precision_off": 0.5245901639344263,
+        "recall_off": 0.5810055865921788,
+        "accuracy": 0.8081065759637188,
+        "confusion_matrix": [
+          [
+            2435,
+            377
+          ],
+          [
+            300,
+            416
+          ]
+        ],
+        "threshold": 0.47,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 0.25974199976189993,
+        "median_ms": 0.24465000024065375,
+        "p95_ms": 0.3719500069564673,
+        "max_ms": 0.5706000083591789
+      },
+      "size_mb": 25.800196,
+      "threshold": 0.47,
+      "eval_sec": 0.5,
+      "backend": null,
+      "dev_macro_f1": 0.7140868439395527
+    },
+    "bert": {
+      "test_metrics": {
+        "macro_f1": 0.8222630982943111,
+        "f1_off": 0.7113790504898266,
+        "f1_not": 0.9331471460987956,
+        "precision_off": 0.7725040916530278,
+        "recall_off": 0.659217877094972,
+        "accuracy": 0.8914399092970522,
+        "confusion_matrix": [
+          [
+            2673,
+            139
+          ],
+          [
+            244,
+            472
+          ]
+        ],
+        "threshold": 0.85,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 22.078406500077108,
+        "median_ms": 19.421250006416813,
+        "p95_ms": 41.41618000139714,
+        "max_ms": 51.15810000279453
+      },
+      "size_mb": 442.499064,
+      "threshold": 0.85,
+      "eval_sec": 117.6,
+      "backend": {
+        "dtype": "torch.float32"
+      },
+      "dev_macro_f1": 0.8125376199010128
+    },
+    "bert_int8": {
+      "test_metrics": {
+        "macro_f1": 0.8149833326421829,
+        "f1_off": 0.7023895727733527,
+        "f1_not": 0.9275770925110132,
+        "precision_off": 0.7293233082706767,
+        "recall_off": 0.6773743016759777,
+        "accuracy": 0.8835034013605442,
+        "confusion_matrix": [
+          [
+            2632,
+            180
+          ],
+          [
+            231,
+            485
+          ]
+        ],
+        "threshold": 0.62,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 16.099246000230778,
+        "median_ms": 15.324849999160506,
+        "p95_ms": 22.829529997397913,
+        "max_ms": 28.784299996914342
+      },
+      "size_mb": 186.033989,
+      "threshold": 0.62,
+      "eval_sec": 60.9,
+      "backend": {
+        "int8_linear_layers": 74,
+        "fp32_linear_layers": 0,
+        "engine": "onednn"
+      },
+      "dev_macro_f1": 0.8118368453739908
+    }
+  },
+  "missing_models": [],
+  "test_n": 3528
+}

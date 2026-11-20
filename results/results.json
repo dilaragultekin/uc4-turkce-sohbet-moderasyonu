@@ -1,0 +1,200 @@
+{
+  "hardware": {
+    "cpu": "13th Gen Intel(R) Core(TM) i7-13650HX",
+    "logical_cpus": 20,
+    "torch_threads": 4,
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "torch": "2.15.0+cpu",
+    "cuda_visible": false
+  },
+  "latency_protocol": {
+    "runs": 200,
+    "warmup": 10,
+    "batch_size": 1,
+    "end_to_end": true,
+    "sample_seed": 0,
+    "budget_ms": 50.0,
+    "budget_criterion": "p95"
+  },
+  "models": {
+    "rule": {
+      "test_metrics": {
+        "macro_f1": 0.7131205063477594,
+        "f1_off": 0.5173951828724354,
+        "f1_not": 0.9088458298230834,
+        "precision_off": 0.7160493827160493,
+        "recall_off": 0.40502793296089384,
+        "accuracy": 0.846655328798186,
+        "confusion_matrix": [
+          [
+            2697,
+            115
+          ],
+          [
+            426,
+            290
+          ]
+        ],
+        "threshold": 0.5,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 0.13671250053448603,
+        "median_ms": 0.10440000187372789,
+        "p95_ms": 0.3474049954093061,
+        "max_ms": 0.611600000411272
+      },
+      "size_mb": 0.20030699999999999,
+      "threshold": 0.5,
+      "eval_sec": 0.6,
+      "backend": null,
+      "dev_macro_f1": 0.6918956855791962
+    },
+    "tfidf": {
+      "test_metrics": {
+        "macro_f1": 0.7697350273090533,
+        "f1_off": 0.6339779005524862,
+        "f1_not": 0.9054921540656206,
+        "precision_off": 0.6270491803278688,
+        "recall_off": 0.6410614525139665,
+        "accuracy": 0.8497732426303855,
+        "confusion_matrix": [
+          [
+            2539,
+            273
+          ],
+          [
+            257,
+            459
+          ]
+        ],
+        "threshold": 0.53,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 1.2075355002161814,
+        "median_ms": 1.057649998983834,
+        "p95_ms": 2.1794599975692104,
+        "max_ms": 3.299700008938089
+      },
+      "size_mb": 6.900464,
+      "threshold": 0.53,
+      "eval_sec": 1.1,
+      "backend": null,
+      "dev_macro_f1": 0.7458783107726445
+    },
+    "nn": {
+      "test_metrics": {
+        "macro_f1": 0.71465528086215,
+        "f1_off": 0.5513585155732273,
+        "f1_not": 0.8779520461510727,
+        "precision_off": 0.5245901639344263,
+        "recall_off": 0.5810055865921788,
+        "accuracy": 0.8081065759637188,
+        "confusion_matrix": [
+          [
+            2435,
+            377
+          ],
+          [
+            300,
+            416
+          ]
+        ],
+        "threshold": 0.47,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 0.36913950025336817,
+        "median_ms": 0.3332499982207082,
+        "p95_ms": 0.6084249936975533,
+        "max_ms": 0.999800002318807
+      },
+      "size_mb": 25.800196,
+      "threshold": 0.47,
+      "eval_sec": 0.8,
+      "backend": null,
+      "dev_macro_f1": 0.7140868439395527
+    },
+    "bert": {
+      "test_metrics": {
+        "macro_f1": 0.811390006599817,
+        "f1_off": 0.7045751633986929,
+        "f1_not": 0.918204849800941,
+        "precision_off": 0.6621621621621622,
+        "recall_off": 0.7527932960893855,
+        "accuracy": 0.8718820861678005,
+        "confusion_matrix": [
+          [
+            2537,
+            275
+          ],
+          [
+            177,
+            539
+          ]
+        ],
+        "threshold": 0.42,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 22.14624600026582,
+        "median_ms": 19.899650003935676,
+        "p95_ms": 40.10976499921525,
+        "max_ms": 61.835400003474206
+      },
+      "size_mb": 442.499064,
+      "threshold": 0.42,
+      "eval_sec": 121.0,
+      "backend": {
+        "dtype": "torch.float32"
+      },
+      "dev_macro_f1": 0.8047246376665742
+    },
+    "bert_int8": {
+      "test_metrics": {
+        "macro_f1": 0.817743885940839,
+        "f1_off": 0.7106529209621993,
+        "f1_not": 0.9248348509194787,
+        "precision_off": 0.699594046008119,
+        "recall_off": 0.7220670391061452,
+        "accuracy": 0.8806689342403629,
+        "confusion_matrix": [
+          [
+            2590,
+            222
+          ],
+          [
+            199,
+            517
+          ]
+        ],
+        "threshold": 0.5,
+        "n": 3528
+      },
+      "latency": {
+        "runs": 200,
+        "mean_ms": 16.402937500315602,
+        "median_ms": 15.814699996553827,
+        "p95_ms": 22.271695000381435,
+        "max_ms": 27.396400008001365
+      },
+      "size_mb": 186.033989,
+      "threshold": 0.5,
+      "eval_sec": 61.3,
+      "backend": {
+        "int8_linear_layers": 74,
+        "fp32_linear_layers": 0,
+        "engine": "onednn"
+      },
+      "dev_macro_f1": 0.8028957401791196
+    }
+  },
+  "missing_models": [],
+  "test_n": 3528
+}

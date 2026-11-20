@@ -1,0 +1,55 @@
+{
+  "source": "stefan-it/offenseval2020_tr",
+  "revision": "f34679caea00504400fc70421adb853765c2a0f7",
+  "license": "CC-BY-2.0",
+  "splits": {
+    "train": {
+      "n": 30000,
+      "n_off": 5796,
+      "n_not": 24204,
+      "off_ratio": 0.1932,
+      "words_median": 12.0,
+      "words_p95": 36.0,
+      "words_max": 82,
+      "empty_texts": 0,
+      "duplicate_texts_within": 9,
+      "sha256_raw": "4f80236bd9249042805caa0ed0f675c274b925f05a65bc07aba7b0e10c9cf0f1"
+    },
+    "dev": {
+      "n": 1756,
+      "n_off": 335,
+      "n_not": 1421,
+      "off_ratio": 0.1908,
+      "words_median": 12.0,
+      "words_p95": 36.0,
+      "words_max": 48,
+      "empty_texts": 0,
+      "duplicate_texts_within": 0,
+      "sha256_raw": "ff6851c8d449e4bf789b48beab7db0047a949dd810746cfce62029854a38abf7"
+    },
+    "test": {
+      "n": 3528,
+      "n_off": 716,
+      "n_not": 2812,
+      "off_ratio": 0.2029,
+      "words_median": 13.0,
+      "words_p95": 36.0,
+      "words_max": 58,
+      "empty_texts": 0,
+      "duplicate_texts_within": 0,
+      "sha256_raw": "db0ecff1ec7f3b9ab44ce1dfba3f24a08018c939578bc4c211fbe71a52d3cd52"
+    }
+  },
+  "overlap": {
+    "train_test": 1,
+    "dev_test": 0,
+    "train_dev": 0,
+    "train_test_examples": [
+      "@USER Kucuk şeylerle mutlu olabilmeli insan kucuk bir yat kucuk bir villa mini cooper mesela"
+    ]
+  },
+  "train_char_info": {
+    "has_turkish_chars": true,
+    "mention_placeholder_count": 22707
+  }
+}

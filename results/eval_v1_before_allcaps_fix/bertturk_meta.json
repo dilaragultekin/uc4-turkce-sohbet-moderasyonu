@@ -1,0 +1,67 @@
+{
+  "model": "dbmdz/bert-base-turkish-cased",
+  "revision": "b6e1de16c983e0f2c70664591ea3f22810072608",
+  "threshold": 0.85,
+  "dev_metrics": {
+    "macro_f1": 0.8125376199010128,
+    "f1_off": 0.6897689768976898,
+    "f1_not": 0.9353062629043358,
+    "precision_off": 0.7712177121771218,
+    "recall_off": 0.6238805970149254,
+    "accuracy": 0.8929384965831435,
+    "confusion_matrix": [
+      [
+        1359,
+        62
+      ],
+      [
+        126,
+        209
+      ]
+    ],
+    "threshold": 0.85,
+    "n": 1756
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.4702,
+      "dev_macro_f1@0.5": 0.7931,
+      "min": 2.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.2946,
+      "dev_macro_f1@0.5": 0.7946,
+      "min": 2.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1832,
+      "dev_macro_f1@0.5": 0.7987,
+      "min": 2.0
+    }
+  ],
+  "best_epoch": 3,
+  "hyperparams": {
+    "epochs": 3,
+    "batch": 16,
+    "accum": 2,
+    "lr": 2e-05,
+    "limit": 0,
+    "effective_batch": 32,
+    "max_len": 128,
+    "warmup": 0.1,
+    "weight_decay": 0.01,
+    "loss": "class-weighted cross-entropy",
+    "amp_fp16": true
+  },
+  "input_normalization": "normalize_text(lowercase=False)",
+  "truncated_ratio_train": 0.0004,
+  "device": "cuda",
+  "gpu": "NVIDIA L4",
+  "train_minutes": 6.1,
+  "selected_on": "dev",
+  "test_set_used": false,
+  "trial_limit": 0
+}

@@ -1,0 +1,6 @@
+model,key,test_macro_f1,test_f1_off,test_precision_off,test_recall_off,dev_macro_f1,threshold,size_mb,latency_mean_ms,latency_p95_ms,budget_ms,budget_met_p95
+Kural: sözlük + edit distance,rule,0.7131,0.5174,0.716,0.405,0.6919,0.5,0.2,0.14,0.35,50.0,True
+TF-IDF + Lojistik Regresyon,tfidf,0.7697,0.634,0.627,0.6411,0.7459,0.53,6.9,1.21,2.18,50.0,True
+Word2Vec + Sinir Ağı,nn,0.7147,0.5514,0.5246,0.581,0.7141,0.47,25.8,0.37,0.61,50.0,True
+BERTurk (FP32),bert,0.8114,0.7046,0.6622,0.7528,0.8047,0.42,442.5,22.15,40.11,50.0,True
+BERTurk (INT8 quantized),bert_int8,0.8177,0.7107,0.6996,0.7221,0.8029,0.5,186.03,16.4,22.27,50.0,True
