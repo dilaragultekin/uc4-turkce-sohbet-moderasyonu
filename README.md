@@ -137,6 +137,9 @@ ayrıntılar `results/results.json`, her mesajın tahmini `results/test_predicti
   mesajın olasılığı batch boyutuna göre değişebilir; bu yüzden INT8 modeli, uygulamadaki
   gibi her mesaj tek tek değerlendirilir (`models/bertturk_int8/meta.json` → `batch_effect_int8`).
 - Hata örnekleri: `results/failure_examples.csv`.
+- INT8 modeli işletim sistemine göre farklı hesaplama motoru kullanır (Windows: oneDNN,
+  Linux: x86). Linux'ta sıfırdan kurulumda INT8 macro-F1 0.8181 ölçüldü (Windows'ta 0.8177);
+  diğer dört modelin sonuçları birebir aynıdır.
 
 **İlk değerlendirme (v1).** Uygulamayı test ederken TAMAMI BÜYÜK HARFLE yazılmış
 hakaretlerin ("İT HERİF") temiz sayıldığı görüldü. Normalizasyon, BÜYÜK HARF kelimeleri
@@ -175,6 +178,9 @@ python src/05_quantization.py
 python src/06_benchmark.py
 python app.py
 ```
+
+`06_benchmark.py` her model için 200 mesajlık gecikme ölçümü de yaptığından yavaş
+bilgisayarlarda uzun sürebilir (2 çekirdekli bir makinede 25 dakikayı aştı).
 
 Modelleri yeniden eğitip Hub'a yüklemek isteyen için (`hf auth login` sonrası):
 

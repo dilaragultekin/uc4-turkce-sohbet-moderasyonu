@@ -15,7 +15,7 @@ tags:
 
 SWE015 (Introduction to Large Language Models) ödevi, Use Case 4 için eğitilmiş
 model dosyaları. Kod, kurulum ve rapor GitHub deposundadır:
-**GITHUB_REPO_URL**
+**https://github.com/dilaragultekin/uc4-turkce-sohbet-moderasyonu**
 
 Bu depoyu elle indirmeniz gerekmez: uygulama (`python app.py`) eksik dosyaları
 ilk açılışta buradan, sabitlenmiş bir commit'ten indirir ve her dosyanın SHA-256
